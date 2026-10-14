@@ -1,0 +1,2198 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prathmesh Hulavale | AI Automation Engineer & UiPath Developer</title>
+  <meta name="description" content="Portfolio of Prathmesh Hulavale — AI Automation Engineer, UiPath RPA Developer (3+ Years), Python & Maestro Agentic Orchestration Specialist based in Mumbai." />
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Three.js for Interactive 3D Engines -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            obsidian: '#07090E',
+            graphite: '#0F141C',
+            panel: '#131A26',
+            cyanAccent: '#00F0FF',
+            iceBlue: '#38BDF8',
+            aiViolet: '#8B5CF6',
+          },
+          fontFamily: {
+            display: ['Space Grotesk', 'sans-serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    :root {
+      --bg-obsidian: #07090E;
+      --bg-graphite: #0F141C;
+      --accent-cyan: #00F0FF;
+    }
+    body {
+      background-color: var(--bg-obsidian);
+      color: #E2E8F0;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      overflow-x: hidden;
+    }
+    /* Technical Background Grid */
+    .bg-tech-grid {
+      background-size: 40px 40px;
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    }
+    .glass-panel {
+      background: rgba(15, 20, 28, 0.78);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .glass-card {
+      background: linear-gradient(145deg, rgba(22, 30, 46, 0.72) 0%, rgba(12, 16, 24, 0.88) 100%);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .glass-card:hover {
+      border-color: rgba(0, 240, 255, 0.4);
+      transform: translateY(-3px);
+      box-shadow: 0 16px 36px -12px rgba(0, 240, 255, 0.12);
+    }
+    .glow-cyan {
+      box-shadow: 0 0 25px rgba(0, 240, 255, 0.25);
+    }
+    .node-pulse {
+      animation: pulseCyan 2.4s infinite ease-in-out;
+    }
+    @keyframes pulseCyan {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(0, 240, 255, 0.4); }
+      50% { box-shadow: 0 0 0 8px rgba(0, 240, 255, 0); }
+    }
+    /* Unmodified Original Portrait Framing */
+    .portrait-studio-frame {
+      background: radial-gradient(circle at 50% 35%, #FFFFFF 0%, #F1F5F9 70%, #E2E8F0 100%);
+      image-rendering: -webkit-optimize-contrast;
+    }
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #07090E; }
+    ::-webkit-scrollbar-thumb { background: #1E293B; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #00F0FF; }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, ::before, ::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+</head>
+<body class="bg-tech-grid antialiased selection:bg-cyanAccent/20 selection:text-cyanAccent">
+
+  <!-- SKIP TO CONTENT FOR ACCESSIBILITY -->
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-cyanAccent focus:text-obsidian focus:font-mono focus:font-semibold focus:rounded">
+    Skip to main content
+  </a>
+
+  <!-- ==========================================
+       STICKY NAVIGATION SYSTEM
+       ========================================== -->
+  <header class="fixed top-0 left-0 right-0 z-40 glass-panel border-b border-white/10 transition-all duration-300" id="navbar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <!-- Brand Identity with Authentic Portrait Avatar -->
+      <a href="#home" class="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-cyanAccent rounded-lg p-1">
+        <div class="w-11 h-11 rounded-full portrait-studio-frame border-2 border-cyanAccent/60 overflow-hidden flex items-center justify-center shrink-0 shadow-md group-hover:border-cyanAccent transition-colors">
+          <img 
+            src="./profile.jpg" 
+            onerror="if(this.src.indexOf('image0.jpeg')===-1){this.src='./image0.jpeg';}else{this.style.display='none';this.parentElement.innerHTML='<span class=\'font-mono font-bold text-obsidian text-xs\'>PH</span>';}"
+            alt="Prathmesh Hulavale" 
+            class="w-full h-full object-cover object-top" 
+          />
+        </div>
+        <div>
+          <span class="font-display font-bold text-white tracking-tight block leading-none text-base">PRATHMESH HULAVALE</span>
+          <span class="font-mono text-[11px] text-cyanAccent/90 tracking-wider uppercase block mt-1">AI Automation • UiPath • FDE</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden lg:flex items-center gap-1" aria-label="Primary Navigation">
+        <a href="#home" class="nav-link px-3 py-2 rounded-md text-xs font-mono uppercase tracking-wider text-slate-300 hover:text-cyanAccent hover:bg-white/5 transition-all">01.Home</a>
+        <a href="#about" class="nav-link px-3 py-2 rounded-md text-xs font-mono uppercase tracking-wider text-slate-300 hover:text-cyanAccent hover:bg-white/5 transition-all">02.About</a>
+        <a href="#skills" class="nav-link px-3 py-2 rounded-md text-xs font-mono uppercase tracking-wider text-slate-300 hover:text-cyanAccent hover:bg-white/5 transition-all">03.Skills</a>
+        <a href="#projects" class="nav-link px-3 py-2 rounded-md text-xs font-mono uppercase tracking-wider text-slate-300 hover:text-cyanAccent hover:bg-white/5 transition-all">04.Projects</a>
+        <a href="#experience" class="nav-link px-3 py-2 rounded-md text-xs font-mono uppercase tracking-wider text-slate-300 hover:text-cyanAccent hover:bg-white/5 transition-all">05.Experience</a>
+        <a href="#certifications" class="nav-link px-3 py-2 rounded-md text-xs font-mono uppercase tracking-wider text-slate-300 hover:text-cyanAccent hover:bg-white/5 transition-all">06.Certs</a>
+        <a href="#lab" class="nav-link px-3 py-2 rounded-md text-xs font-mono uppercase tracking-wider text-cyanAccent bg-cyanAccent/10 border border-cyanAccent/30 transition-all">3D Bot Lab</a>
+      </nav>
+
+      <!-- Persistent CTA, Resume Button & Mobile Menu Trigger -->
+      <div class="flex items-center gap-2.5">
+        <button onclick="openResumeModal()" class="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-white/5 border border-white/15 text-slate-200 font-mono text-xs hover:border-cyanAccent hover:text-cyanAccent transition-all">
+          <i data-lucide="file-text" class="w-3.5 h-3.5 text-cyanAccent"></i>
+          Resume PDF
+        </button>
+        <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-cyanAccent/10 border border-cyanAccent/40 text-cyanAccent font-mono text-xs font-semibold hover:bg-cyanAccent hover:text-obsidian transition-all focus:ring-2 focus:ring-cyanAccent">
+          <span class="w-2 h-2 rounded-full bg-cyanAccent animate-ping"></span>
+          Let's Connect
+        </a>
+        <button id="mobile-menu-btn" aria-label="Toggle Menu" aria-expanded="false" class="lg:hidden p-2 rounded-lg border border-white/10 text-slate-300 hover:text-white hover:border-cyanAccent">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden lg:hidden glass-panel border-b border-white/10 px-6 py-5 space-y-3">
+      <div class="grid grid-cols-2 gap-2 font-mono text-xs">
+        <a href="#home" class="mobile-nav-link p-2.5 rounded bg-white/5 text-slate-200 hover:text-cyanAccent">01. Home</a>
+        <a href="#about" class="mobile-nav-link p-2.5 rounded bg-white/5 text-slate-200 hover:text-cyanAccent">02. About</a>
+        <a href="#skills" class="mobile-nav-link p-2.5 rounded bg-white/5 text-slate-200 hover:text-cyanAccent">03. Skills</a>
+        <a href="#projects" class="mobile-nav-link p-2.5 rounded bg-white/5 text-slate-200 hover:text-cyanAccent">04. Projects</a>
+        <a href="#experience" class="mobile-nav-link p-2.5 rounded bg-white/5 text-slate-200 hover:text-cyanAccent">05. Experience</a>
+        <a href="#certifications" class="mobile-nav-link p-2.5 rounded bg-white/5 text-slate-200 hover:text-cyanAccent">06. Certifications</a>
+        <a href="#lab" class="mobile-nav-link p-2.5 rounded bg-white/5 text-cyanAccent font-semibold">07. 3D Bot Lab</a>
+        <a href="#contact" class="mobile-nav-link p-2.5 rounded bg-cyanAccent/20 text-cyanAccent font-semibold">08. Contact</a>
+      </div>
+      <button onclick="openResumeModal()" class="w-full py-2.5 rounded-lg bg-cyanAccent text-obsidian font-display font-bold text-xs flex items-center justify-center gap-2">
+        <i data-lucide="file-text" class="w-4 h-4"></i> View &amp; Download Resume PDF
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content" class="pt-20">
+
+    <!-- ==========================================
+         SECTION 1: HERO SECTION (WITH UNMODIFIED PORTRAIT BADGE + 3D ORBITAL CORE)
+         ========================================== -->
+    <section id="home" class="relative min-h-[92vh] flex items-center py-14 lg:py-20 overflow-hidden border-b border-white/10">
+      <!-- Ambient Background Glows -->
+      <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-cyanAccent/10 rounded-full blur-[130px] pointer-events-none"></div>
+      <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-aiViolet/10 rounded-full blur-[140px] pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full grid grid-cols-1 lg:grid-cols-12 gap-10 items-center relative z-10">
+        
+        <!-- Left Column: Identity & Core Positioning -->
+        <div class="lg:col-span-7 space-y-6">
+          
+          <!-- Executive Identity Pill with Exact Original Photograph -->
+          <div class="inline-flex items-center gap-3.5 p-2 pr-4 rounded-full bg-white/5 border border-white/15 backdrop-blur-md">
+            <div class="w-12 h-12 rounded-full portrait-studio-frame border-2 border-cyanAccent overflow-hidden shrink-0">
+              <img 
+                src="./profile.jpg" 
+                onerror="if(this.src.indexOf('image0.jpeg')===-1){this.src='./image0.jpeg';}"
+                alt="Prathmesh Hulavale Portrait" 
+                class="w-full h-full object-cover object-top" 
+              />
+            </div>
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="font-display font-bold text-white text-sm">Prathmesh Hulavale</span>
+                <span class="px-2 py-0.5 rounded-full bg-emerald-500/15 border border-emerald-500/40 font-mono text-[10px] text-emerald-400 flex items-center gap-1">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span> Verified
+                </span>
+              </div>
+              <span class="font-mono text-xs text-slate-300 block">Mumbai, India • 3+ Years Enterprise Automation</span>
+            </div>
+          </div>
+
+          <h1 class="font-display text-4xl sm:text-5xl xl:text-6xl font-bold text-white tracking-tight leading-[1.1]">
+            Engineering <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyanAccent via-iceBlue to-aiViolet">Intelligent Automation</span> for Real-World Impact.
+          </h1>
+
+          <p class="text-lg sm:text-xl text-slate-300 leading-relaxed max-w-2xl font-normal">
+            AI Automation Engineer &amp; UiPath Developer specializing in enterprise automation, agentic business orchestration, and Python-driven AI solutions — with a <strong class="text-white font-semibold">forward-deployed engineering mindset</strong>.
+          </p>
+
+          <p class="text-sm font-mono text-slate-400 border-l-2 border-cyanAccent pl-4 py-1">
+            "I combine enterprise automation (UiPath REFramework, Orchestrator, Document Understanding), AI-powered workflows (Agent Builder, Maestro Flow, Human-in-the-Loop, GenAI, RAG, Agentic Business Orchestration), and hands-on Python, SQL &amp; REST API implementation to solve operational problems."
+          </p>
+
+          <!-- Action CTAs -->
+          <div class="flex flex-wrap items-center gap-3.5 pt-2">
+            <a href="#projects" class="px-6 py-3.5 rounded-lg bg-cyanAccent text-obsidian font-display font-bold text-sm tracking-wide hover:bg-iceBlue transition-all flex items-center gap-2 glow-cyan">
+              Explore My Work
+              <i data-lucide="arrow-down-right" class="w-4 h-4"></i>
+            </a>
+            <button onclick="openResumeModal()" class="px-5 py-3.5 rounded-lg glass-card text-white font-display font-semibold text-sm hover:border-cyanAccent transition-all flex items-center gap-2">
+              <i data-lucide="file-text" class="w-4 h-4 text-cyanAccent"></i>
+              View My Resume
+            </button>
+            <a href="#lab" class="px-4 py-3.5 rounded-lg bg-aiViolet/15 border border-aiViolet/40 text-aiViolet hover:bg-aiViolet hover:text-white font-mono text-xs uppercase tracking-wider flex items-center gap-2 transition-all">
+              <i data-lucide="bot" class="w-4 h-4"></i>
+              Watch 3D Bot Lab
+            </a>
+          </div>
+
+          <!-- Verified Skill Telemetry Pills -->
+          <div class="pt-6 border-t border-white/10">
+            <span class="text-[11px] font-mono uppercase tracking-widest text-slate-400 block mb-3">Verified Production &amp; Agentic Stack</span>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1.5 rounded bg-white/5 border border-white/10 font-mono text-xs text-cyanAccent flex items-center gap-1.5">
+                <i data-lucide="cpu" class="w-3.5 h-3.5"></i> UiPath Studio &amp; Orchestrator
+              </span>
+              <span class="px-3 py-1.5 rounded bg-white/5 border border-white/10 font-mono text-xs text-aiViolet flex items-center gap-1.5">
+                <i data-lucide="workflow" class="w-3.5 h-3.5"></i> Maestro Flow &amp; Agentic HITL
+              </span>
+              <span class="px-3 py-1.5 rounded bg-white/5 border border-white/10 font-mono text-xs text-amber-300 flex items-center gap-1.5">
+                <i data-lucide="code-2" class="w-3.5 h-3.5"></i> Python &amp; Agentic Code
+              </span>
+              <span class="px-3 py-1.5 rounded bg-white/5 border border-white/10 font-mono text-xs text-iceBlue flex items-center gap-1.5">
+                <i data-lucide="file-scan" class="w-3.5 h-3.5"></i> IDP, GenAI &amp; RAG
+              </span>
+              <span class="px-3 py-1.5 rounded bg-white/5 border border-white/10 font-mono text-xs text-emerald-400 flex items-center gap-1.5">
+                <i data-lucide="database" class="w-3.5 h-3.5"></i> REFramework, REST APIs &amp; MySQL
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Interactive 3D Gyroscopic AI & Agentic Orchestration Core -->
+        <div class="lg:col-span-5 relative">
+          <div class="glass-card rounded-2xl p-4 border border-white/15 relative overflow-hidden">
+            <!-- Top Workstation Status Bar -->
+            <div class="flex items-center justify-between border-b border-white/10 pb-3 mb-3 text-xs font-mono">
+              <div class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-cyanAccent animate-ping"></span>
+                <span class="text-slate-200 font-semibold">AGENTIC_ORBITAL_CORE_3D</span>
+              </div>
+              <button onclick="triggerHeroPulse()" class="text-cyanAccent bg-cyanAccent/10 hover:bg-cyanAccent hover:text-obsidian px-2.5 py-0.5 rounded text-[10px] border border-cyanAccent/40 transition-all font-bold">
+                ⚡ PULSE NEURAL CORE
+              </button>
+            </div>
+
+            <!-- 3D Canvas Container -->
+            <div id="hero-3d-container" class="w-full h-[380px] sm:h-[420px] rounded-xl bg-obsidian/95 relative cursor-pointer overflow-hidden border border-white/5" aria-label="Interactive 3D Orbital AI Orchestration Core — move cursor or click to pulse">
+              <!-- Live Telemetry HUD Overlays -->
+              <div class="absolute top-3 left-3 z-10 pointer-events-none space-y-1.5">
+                <div class="px-2.5 py-1 rounded bg-obsidian/85 border border-cyanAccent/30 font-mono text-[10px] text-cyanAccent flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-cyanAccent"></span>
+                  RING_01: UIPATH REFRAMEWORK &amp; APIs
+                </div>
+                <div class="px-2.5 py-1 rounded bg-obsidian/85 border border-aiViolet/30 font-mono text-[10px] text-aiViolet flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-aiViolet"></span>
+                  RING_02: MAESTRO FLOW &amp; HITL AGENTS
+                </div>
+                <div class="px-2.5 py-1 rounded bg-obsidian/85 border border-emerald-400/30 font-mono text-[10px] text-emerald-400 flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                  RING_03: PYTHON, RAG &amp; MYSQL DATA
+                </div>
+              </div>
+
+              <!-- Live Task Log Pill at Bottom -->
+              <div class="absolute bottom-3 left-3 right-3 z-10 pointer-events-none flex items-center justify-between text-[11px] font-mono bg-obsidian/90 px-3 py-1.5 rounded-lg border border-white/10">
+                <span id="hero-bot-live-log" class="text-cyanAccent truncate">► Click 3D Core to dispatch Agentic Pulse...</span>
+                <span class="text-slate-400 hidden sm:inline ml-2">Move &amp; Click 3D</span>
+              </div>
+            </div>
+
+            <!-- Bottom Telemetry Footer -->
+            <div class="grid grid-cols-3 gap-2 pt-3 mt-3 border-t border-white/10 text-center font-mono">
+              <div class="p-2 rounded bg-white/5">
+                <span class="text-[10px] text-slate-400 block">EXPERIENCE</span>
+                <span class="text-sm font-bold text-white">3+ Years</span>
+              </div>
+              <div class="p-2 rounded bg-white/5">
+                <span class="text-[10px] text-slate-400 block">CERTIFICATIONS</span>
+                <span class="text-sm font-bold text-cyanAccent">3x UiPath Pro</span>
+              </div>
+              <div class="p-2 rounded bg-white/5">
+                <span class="text-[10px] text-slate-400 block">ORCHESTRATION</span>
+                <span class="text-sm font-bold text-aiViolet">Maestro + Python</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 2: ABOUT ME & EXECUTIVE PORTRAIT SHOWCASE
+         ========================================== -->
+    <section id="about" class="py-20 lg:py-28 border-b border-white/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Left Column: Unmodified Executive Portrait Showcase Card -->
+          <div class="lg:col-span-5">
+            <div class="glass-card rounded-2xl p-4 border border-cyanAccent/30 relative overflow-hidden">
+              <!-- Top HUD Header -->
+              <div class="flex items-center justify-between border-b border-white/10 pb-2.5 mb-3 font-mono text-[11px]">
+                <span class="text-cyanAccent flex items-center gap-1.5">
+                  <i data-lucide="user-check" class="w-3.5 h-3.5"></i> ARCHITECT_IDENTITY
+                </span>
+                <span class="text-emerald-400">● ACTIVE_FDE</span>
+              </div>
+
+              <!-- Strictly Unmodified Original Photo Container -->
+              <div class="rounded-xl portrait-studio-frame overflow-hidden border border-white/15 shadow-inner flex items-end justify-center pt-4">
+                <img 
+                  src="./profile.jpg" 
+                  onerror="if(this.src.indexOf('image0.jpeg')===-1){this.src='./image0.jpeg';}"
+                  alt="Prathmesh Hulavale — AI Automation Engineer and UiPath Developer" 
+                  class="w-full max-h-[390px] object-contain object-bottom" 
+                />
+              </div>
+
+              <!-- Role & Education Telemetry Below Portrait -->
+              <div class="mt-4 p-4 rounded-xl bg-obsidian/90 border border-white/10 space-y-1.5">
+                <div class="font-mono text-[11px] text-cyanAccent uppercase">Current Production Role</div>
+                <div class="font-display font-bold text-base text-white">RPA Developer (UiPath) – Legal Analyst</div>
+                <div class="text-xs text-slate-300">CMA CGM GBSI (Legal Department) • Nov 2025 – Present</div>
+                <div class="text-[11px] font-mono text-slate-400 pt-1 border-t border-white/10 mt-2">
+                  BSc (Information Technology), University of Mumbai (Mar 2022)
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Bio & Engineering Narrative -->
+          <div class="lg:col-span-7 space-y-5 text-slate-300 leading-relaxed">
+            <span class="font-mono text-xs uppercase tracking-widest text-cyanAccent block">// 02. SYSTEM ARCHITECT PROFILE</span>
+            <h2 class="font-display text-3xl sm:text-4xl font-bold text-white tracking-tight">
+              Bridging Enterprise RPA Stability with Python &amp; Agentic AI Orchestration.
+            </h2>
+            <p>
+              I am a results-driven <strong class="text-white">UiPath Automation Developer with over 3 years of hands-on production experience</strong> architecting, deploying, and maintaining unattended and attended enterprise workflows. Currently at <strong class="text-white">CMA CGM GBSI</strong>, I partner directly with maritime legal teams to automate complex Air and Ocean claims and global Container Damage Recovery (CDR) invoicing processes.
+            </p>
+            <p>
+              Previously at <strong class="text-white">ANZA Solutions LLP</strong>, I engineered end-to-end financial and legal compliance automations—spanning Money on Account (MOA) reconciliation, First AML verification, and automated UK Stamp Duty Land Tax (SDLT) portal submissions backed by MySQL and Case Management Systems (CMS).
+            </p>
+            <p>
+              Operating with a <strong class="text-cyanAccent">Forward Deployed Engineering (FDE) mindset</strong>, I combine deterministic <strong class="text-white">UiPath REFramework</strong> reliability with <strong class="text-aiViolet">hands-on UiPath Maestro Flow, Agentic Business Orchestration, Human-in-the-Loop (HITL) workflows, and Python-based code development</strong>—building intelligent systems that connect LLMs, APIs, and enterprise operations.
+            </p>
+
+            <!-- Quick Highlight Metrics Bar -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-3 font-mono">
+              <div class="p-3.5 rounded-xl bg-white/5 border border-white/10">
+                <span class="text-xs text-cyanAccent block">RPA + AI STACK</span>
+                <span class="text-sm font-bold text-white mt-0.5 block">UiPath &amp; Maestro</span>
+              </div>
+              <div class="p-3.5 rounded-xl bg-white/5 border border-white/10">
+                <span class="text-xs text-aiViolet block">CODE &amp; DATA</span>
+                <span class="text-sm font-bold text-white mt-0.5 block">Python, SQL &amp; APIs</span>
+              </div>
+              <div class="p-3.5 rounded-xl bg-white/5 border border-white/10 col-span-2 sm:col-span-1">
+                <span class="text-xs text-emerald-400 block">DELIVERY MODEL</span>
+                <span class="text-sm font-bold text-white mt-0.5 block">Forward Deployed</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Interactive 6-Stage Forward Deployed Engineering Lifecycle -->
+        <div class="glass-card rounded-2xl p-6 sm:p-8 border border-white/10">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-white/10">
+            <div>
+              <span class="font-mono text-xs uppercase text-aiViolet tracking-wider">Forward Deployed Engineering Methodology</span>
+              <h3 class="font-display text-2xl font-bold text-white mt-1">How I Translate Ambiguous Operations into Production Systems</h3>
+            </div>
+            <span class="font-mono text-xs text-slate-400 bg-white/5 px-3 py-1.5 rounded border border-white/10">Click any stage to inspect engineering protocol</span>
+          </div>
+
+          <!-- Stage Selector Grid -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 my-6" role="tablist" aria-label="Engineering Lifecycle Stages">
+            <button onclick="selectFdeStage(0)" id="fde-tab-0" class="fde-tab p-3.5 rounded-xl border border-cyanAccent bg-cyanAccent/10 text-left transition-all">
+              <span class="font-mono text-xs text-cyanAccent block">01 // DISCOVER</span>
+              <span class="font-display font-bold text-sm text-white mt-1 block">Problem &amp; PDD</span>
+            </button>
+            <button onclick="selectFdeStage(1)" id="fde-tab-1" class="fde-tab p-3.5 rounded-xl border border-white/10 bg-white/5 hover:border-white/30 text-left transition-all">
+              <span class="font-mono text-xs text-slate-400 block">02 // DIAGNOSE</span>
+              <span class="font-display font-bold text-sm text-white mt-1 block">Map Bottlenecks</span>
+            </button>
+            <button onclick="selectFdeStage(2)" id="fde-tab-2" class="fde-tab p-3.5 rounded-xl border border-white/10 bg-white/5 hover:border-white/30 text-left transition-all">
+              <span class="font-mono text-xs text-slate-400 block">03 // PROTOTYPE</span>
+              <span class="font-display font-bold text-sm text-white mt-1 block">Rapid PoC &amp; SDD</span>
+            </button>
+            <button onclick="selectFdeStage(3)" id="fde-tab-3" class="fde-tab p-3.5 rounded-xl border border-white/10 bg-white/5 hover:border-white/30 text-left transition-all">
+              <span class="font-mono text-xs text-slate-400 block">04 // INTEGRATE</span>
+              <span class="font-display font-bold text-sm text-white mt-1 block">APIs, CMS &amp; AI</span>
+            </button>
+            <button onclick="selectFdeStage(4)" id="fde-tab-4" class="fde-tab p-3.5 rounded-xl border border-white/10 bg-white/5 hover:border-white/30 text-left transition-all">
+              <span class="font-mono text-xs text-slate-400 block">05 // VALIDATE</span>
+              <span class="font-display font-bold text-sm text-white mt-1 block">BRE &amp; Resilience</span>
+            </button>
+            <button onclick="selectFdeStage(5)" id="fde-tab-5" class="fde-tab p-3.5 rounded-xl border border-white/10 bg-white/5 hover:border-white/30 text-left transition-all">
+              <span class="font-mono text-xs text-slate-400 block">06 // DEPLOY</span>
+              <span class="font-display font-bold text-sm text-white mt-1 block">Monitor &amp; Iterate</span>
+            </button>
+          </div>
+
+          <!-- Dynamic Stage Detail Output -->
+          <div id="fde-stage-content" class="p-5 rounded-xl bg-obsidian/90 border border-white/10 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Populated by JS -->
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 3: TECHNICAL SKILLS EXPLORER
+         ========================================== -->
+    <section id="skills" class="py-20 lg:py-28 border-b border-white/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+          <div>
+            <span class="font-mono text-xs uppercase tracking-widest text-cyanAccent">// 03. CAPABILITY MATRIX</span>
+            <h2 class="font-display text-3xl sm:text-4xl font-bold text-white mt-2">Technical Skills Explorer</h2>
+            <p class="text-slate-400 text-sm mt-2 max-w-2xl">
+              Every skill listed below is grounded in verified enterprise deliveries, hands-on agentic orchestration, or Python engineering practice. Filter by domain to inspect real-world evidence.
+            </p>
+          </div>
+
+          <!-- Category Filter Controls -->
+          <div class="flex flex-wrap gap-2" role="group" aria-label="Filter skills by category">
+            <button onclick="filterSkills('all')" class="skill-filter-btn active px-3.5 py-2 rounded-lg font-mono text-xs bg-cyanAccent text-obsidian font-bold transition-all" data-filter="all">All Domains (12)</button>
+            <button onclick="filterSkills('Enterprise Automation')" class="skill-filter-btn px-3.5 py-2 rounded-lg font-mono text-xs bg-white/5 text-slate-300 border border-white/10 hover:border-cyanAccent transition-all" data-filter="Enterprise Automation">Enterprise RPA</button>
+            <button onclick="filterSkills('AI Automation')" class="skill-filter-btn px-3.5 py-2 rounded-lg font-mono text-xs bg-white/5 text-slate-300 border border-white/10 hover:border-cyanAccent transition-all" data-filter="AI Automation">Agentic AI &amp; Maestro</button>
+            <button onclick="filterSkills('Integration & Engineering')" class="skill-filter-btn px-3.5 py-2 rounded-lg font-mono text-xs bg-white/5 text-slate-300 border border-white/10 hover:border-cyanAccent transition-all" data-filter="Integration & Engineering">Python, APIs &amp; SQL</button>
+            <button onclick="filterSkills('Forward Deployed Engineering')" class="skill-filter-btn px-3.5 py-2 rounded-lg font-mono text-xs bg-white/5 text-slate-300 border border-white/10 hover:border-cyanAccent transition-all" data-filter="Forward Deployed Engineering">FDE &amp; Lifecycle</button>
+          </div>
+        </div>
+
+        <!-- Legend for Honest Verification -->
+        <div class="flex flex-wrap items-center gap-6 px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-xs font-mono">
+          <span class="text-slate-400 uppercase">Verification Legend:</span>
+          <span class="flex items-center gap-2 text-emerald-400"><span class="w-2 h-2 rounded-full bg-emerald-400"></span> Production Enterprise Experience (3+ Yrs)</span>
+          <span class="flex items-center gap-2 text-aiViolet"><span class="w-2 h-2 rounded-full bg-aiViolet"></span> Hands-On Agentic &amp; Certified Practice</span>
+          <span class="flex items-center gap-2 text-amber-300"><span class="w-2 h-2 rounded-full bg-amber-300"></span> Active Code &amp; FDE Skill Expansion</span>
+        </div>
+
+        <!-- Dynamic Skills Grid -->
+        <div id="skills-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          <!-- Populated dynamically via JS -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 4: PROJECT SHOWCASE (CORE)
+         ========================================== -->
+    <section id="projects" class="py-20 lg:py-28 border-b border-white/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+          <div>
+            <span class="font-mono text-xs uppercase tracking-widest text-cyanAccent">// 04. PRODUCTION &amp; AGENTIC SYSTEMS</span>
+            <h2 class="font-display text-3xl sm:text-4xl font-bold text-white mt-2">Verified Architecture Showcase</h2>
+            <p class="text-slate-400 text-sm mt-2 max-w-2xl">
+              Explore end-to-end automated systems deployed across maritime claims, logistics dispatch, legal compliance, and autonomous multi-agent workflows. Click any blueprint to inspect system architecture, exception handling, and workflow nodes.
+            </p>
+          </div>
+
+          <!-- Project Category Filter -->
+          <div class="flex flex-wrap gap-2">
+            <button onclick="filterProjects('all')" class="proj-filter-btn px-3.5 py-2 rounded-lg font-mono text-xs bg-cyanAccent text-obsidian font-bold transition-all" data-proj-filter="all">All Systems (5)</button>
+            <button onclick="filterProjects('Enterprise RPA')" class="proj-filter-btn px-3.5 py-2 rounded-lg font-mono text-xs bg-white/5 text-slate-300 border border-white/10 hover:border-cyanAccent transition-all" data-proj-filter="Enterprise RPA">Enterprise RPA</button>
+            <button onclick="filterProjects('AI & Hybrid')" class="proj-filter-btn px-3.5 py-2 rounded-lg font-mono text-xs bg-white/5 text-slate-300 border border-white/10 hover:border-cyanAccent transition-all" data-proj-filter="AI & Hybrid">GenAI + RPA</button>
+            <button onclick="filterProjects('Agentic Workflow')" class="proj-filter-btn px-3.5 py-2 rounded-lg font-mono text-xs bg-white/5 text-slate-300 border border-white/10 hover:border-cyanAccent transition-all" data-proj-filter="Agentic Workflow">Agentic Orchestration</button>
+          </div>
+        </div>
+
+        <!-- Project Cards Grid -->
+        <div id="projects-grid" class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <!-- Populated dynamically via JS -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 5: EXPERIENCE & JOURNEY TIMELINE
+         ========================================== -->
+    <section id="experience" class="py-20 lg:py-28 border-b border-white/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+        <div>
+          <span class="font-mono text-xs uppercase tracking-widest text-cyanAccent">// 05. CAREER TRAJECTORY</span>
+          <h2 class="font-display text-3xl sm:text-4xl font-bold text-white mt-2">Enterprise Experience &amp; Engineering Progression</h2>
+          <p class="text-slate-400 text-sm mt-2">Visually distinguishing verified corporate employment from specialized Agentic AI &amp; Python engineering milestones.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+          <!-- Column A: Verified Corporate Employment -->
+          <div class="lg:col-span-7 space-y-8">
+            <h3 class="font-mono text-xs uppercase tracking-widest text-emerald-400 flex items-center gap-2">
+              <i data-lucide="briefcase" class="w-4 h-4"></i> Verified Production Employment
+            </h3>
+
+            <div class="relative pl-6 border-l-2 border-emerald-500/40 space-y-10">
+              
+              <!-- Role 1: CMA CGM GBSI -->
+              <div class="relative glass-card p-6 rounded-2xl">
+                <span class="absolute -left-[31px] top-6 w-4 h-4 rounded-full bg-emerald-400 border-4 border-obsidian"></span>
+                <div class="flex flex-wrap items-center justify-between gap-2">
+                  <span class="px-2.5 py-1 rounded bg-emerald-500/10 border border-emerald-500/30 font-mono text-xs text-emerald-400">Nov 2025 – Present</span>
+                  <span class="font-mono text-xs text-slate-400">Maritime &amp; Global Shipping Legal Ops</span>
+                </div>
+                <h4 class="font-display text-xl font-bold text-white mt-3">RPA Developer (UiPath) – Legal Analyst</h4>
+                <div class="text-sm font-semibold text-cyanAccent">CMA CGM GBSI — Legal Department</div>
+                <ul class="mt-4 space-y-2 text-sm text-slate-300 list-disc list-inside">
+                  <li>Partner directly with maritime lawyers to support Air and Ocean claim workflows, enforcing strict documentation accuracy, validation, and compliance standards.</li>
+                  <li>Engineered the end-to-end <strong>Container Damage Recovery (CDR) Invoicing</strong> automation—covering container validation, damage location identification, payer determination logic, CMS updates, and automated stakeholder invoicing.</li>
+                  <li>Architected the <strong>Claims Dispatch Allocation Bot</strong> leveraging UiPath and Generative AI for unstructured document extraction, rule-based allocation, and retry-resilient execution.</li>
+                </ul>
+                <div class="mt-4 pt-3 border-t border-white/10 flex flex-wrap gap-2 font-mono text-[11px] text-slate-400">
+                  <span>#UiPathStudio</span> <span>#REFramework</span> <span>#GenAI_Extraction</span> <span>#CMS_Integration</span> <span>#MaritimeClaims</span>
+                </div>
+              </div>
+
+              <!-- Role 2: ANZA SOLUTIONS LLP -->
+              <div class="relative glass-card p-6 rounded-2xl">
+                <span class="absolute -left-[31px] top-6 w-4 h-4 rounded-full bg-cyanAccent border-4 border-obsidian"></span>
+                <div class="flex flex-wrap items-center justify-between gap-2">
+                  <span class="px-2.5 py-1 rounded bg-cyanAccent/10 border border-cyanAccent/30 font-mono text-xs text-cyanAccent">Oct 2023 – Nov 2025</span>
+                  <span class="font-mono text-xs text-slate-400">Legal Conveyancing &amp; Financial Compliance</span>
+                </div>
+                <h4 class="font-display text-xl font-bold text-white mt-3">RPA Developer (UiPath)</h4>
+                <div class="text-sm font-semibold text-cyanAccent">ANZA SOLUTIONS LLP</div>
+                <ul class="mt-4 space-y-2 text-sm text-slate-300 list-disc list-inside">
+                  <li>Designed and deployed the <strong>File Opening (MOA) Process</strong> using UiPath and MySQL—automating email intake, CMS cross-checks, First AML compliance verification, client warning cards, and payment advice PDF generation.</li>
+                  <li>Built the end-to-end <strong>SDLT Submission Process</strong> handling queue-based leasehold tax calculations, UK SDLT portal submission, UTRN capture, MySQL database persistence, and audit reporting.</li>
+                  <li>Authored Process Design Documents (PDD) and Solution Design Documents (SDD), managed Orchestrator queues/assets, and provided production support.</li>
+                </ul>
+                <div class="mt-4 pt-3 border-t border-white/10 flex flex-wrap gap-2 font-mono text-[11px] text-slate-400">
+                  <span>#UiPath</span> <span>#MySQL</span> <span>#OrchestratorQueues</span> <span>#FirstAML</span> <span>#PDD_SDD</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Column B: AI Automation & FDE Engineering Progression -->
+          <div class="lg:col-span-5 space-y-8">
+            <h3 class="font-mono text-xs uppercase tracking-widest text-aiViolet flex items-center gap-2">
+              <i data-lucide="sparkles" class="w-4 h-4"></i> Agentic AI, Python &amp; Academic Milestones
+            </h3>
+
+            <div class="relative pl-6 border-l-2 border-aiViolet/40 space-y-6">
+              
+              <div class="glass-card p-5 rounded-xl border-l-2 border-l-aiViolet">
+                <span class="font-mono text-[11px] text-aiViolet uppercase">Agentic Business Orchestration</span>
+                <h4 class="font-display font-bold text-white text-base mt-1">UiPath Maestro Flow, Agents &amp; Human-in-the-Loop</h4>
+                <p class="text-xs text-slate-300 mt-2 leading-relaxed">
+                  Hands-on engineering with <strong>UiPath Maestro Flow</strong> and <strong>Agent Builder</strong>—designing autonomous agents that coordinate RPA bots, Slack/Email connectors, and Human-in-the-Loop (HITL) escalations across end-to-end business processes.
+                </p>
+              </div>
+
+              <div class="glass-card p-5 rounded-xl border-l-2 border-l-amber-400">
+                <span class="font-mono text-[11px] text-amber-300 uppercase">Code-First FDE Expansion</span>
+                <h4 class="font-display font-bold text-white text-base mt-1">Python &amp; Code-Driven AI Automation</h4>
+                <p class="text-xs text-slate-300 mt-2 leading-relaxed">
+                  Expanding into Python-based automation scripting, REST API data pipelines, and code-first agentic workflows to bridge custom LLM/RAG logic with enterprise UiPath deployments.
+                </p>
+              </div>
+
+              <div class="glass-card p-5 rounded-xl border-l-2 border-l-cyanAccent">
+                <span class="font-mono text-[11px] text-cyanAccent uppercase">Professional Credentialing</span>
+                <h4 class="font-display font-bold text-white text-base mt-1">Triple UiPath Certified Professional Track</h4>
+                <p class="text-xs text-slate-300 mt-2 leading-relaxed">
+                  Completed professional certifications across core <strong>Automation Developer Professional</strong>, <strong>Agentic Automation Associate</strong>, and <strong>Specialized AI Associate</strong> tracks alongside Document Understanding.
+                </p>
+              </div>
+
+              <div class="glass-card p-5 rounded-xl border-l-2 border-l-slate-500">
+                <span class="font-mono text-[11px] text-slate-400 uppercase">March 2022 • Academic Foundation</span>
+                <h4 class="font-display font-bold text-white text-base mt-1">BSc in Information Technology</h4>
+                <p class="text-xs text-slate-300 mt-1">University of Mumbai</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 6: CERTIFICATIONS SHOWCASE
+         ========================================== -->
+    <section id="certifications" class="py-20 lg:py-28 border-b border-white/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+        <div>
+          <span class="font-mono text-xs uppercase tracking-widest text-cyanAccent">// 06. VERIFIED CREDENTIALS</span>
+          <h2 class="font-display text-3xl sm:text-4xl font-bold text-white mt-2">UiPath Certified Professional Vault</h2>
+          <p class="text-slate-400 text-sm mt-2">Click any certification card to inspect its verified Credential ID and launch the official UiPath verification link.</p>
+        </div>
+
+        <!-- 3 Major Certifications Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <!-- Cert 1 -->
+          <div onclick="openCertModal(0)" tabindex="0" role="button" aria-label="Inspect UiPath Automation Developer Professional Certification" class="glass-card rounded-2xl p-6 cursor-pointer flex flex-col justify-between group focus:outline-none focus:ring-2 focus:ring-cyanAccent">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-6">
+                <div class="w-12 h-12 rounded-xl bg-cyanAccent/10 border border-cyanAccent/40 flex items-center justify-center text-cyanAccent">
+                  <i data-lucide="award" class="w-6 h-6"></i>
+                </div>
+                <span class="px-2.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 font-mono text-[11px] text-emerald-400">ID: 182751723</span>
+              </div>
+              <div class="font-mono text-xs text-cyanAccent uppercase tracking-wider">UiPath Certified Professional</div>
+              <h3 class="font-display text-xl font-bold text-white mt-2 group-hover:text-cyanAccent transition-colors">
+                Automation Developer Professional Certification
+              </h3>
+              <p class="text-xs text-slate-400 mt-3 leading-relaxed">
+                Validates advanced enterprise RPA architecture, REFramework mastery, Orchestrator queue management, and production-grade exception handling.
+              </p>
+            </div>
+            <div class="pt-6 mt-6 border-t border-white/10 flex items-center justify-between font-mono text-xs text-slate-300">
+              <span>Issuer: UiPath</span>
+              <span class="text-cyanAccent flex items-center gap-1">Verify Credential <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i></span>
+            </div>
+          </div>
+
+          <!-- Cert 2 -->
+          <div onclick="openCertModal(1)" tabindex="0" role="button" aria-label="Inspect UiPath Agentic Automation Associate Certification" class="glass-card rounded-2xl p-6 cursor-pointer flex flex-col justify-between group focus:outline-none focus:ring-2 focus:ring-cyanAccent">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-6">
+                <div class="w-12 h-12 rounded-xl bg-aiViolet/10 border border-aiViolet/40 flex items-center justify-center text-aiViolet">
+                  <i data-lucide="network" class="w-6 h-6"></i>
+                </div>
+                <span class="px-2.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 font-mono text-[11px] text-emerald-400">ID: 170855327</span>
+              </div>
+              <div class="font-mono text-xs text-aiViolet uppercase tracking-wider">UiPath Certified Professional</div>
+              <h3 class="font-display text-xl font-bold text-white mt-2 group-hover:text-aiViolet transition-colors">
+                Agentic Automation Associate Certification
+              </h3>
+              <p class="text-xs text-slate-400 mt-3 leading-relaxed">
+                Validates autonomous AI agent design, UiPath Agent Builder workflows, human-in-the-loop escalation, and Maestro process orchestration.
+              </p>
+            </div>
+            <div class="pt-6 mt-6 border-t border-white/10 flex items-center justify-between font-mono text-xs text-slate-300">
+              <span>Issuer: UiPath</span>
+              <span class="text-aiViolet flex items-center gap-1">Verify Credential <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i></span>
+            </div>
+          </div>
+
+          <!-- Cert 3 -->
+          <div onclick="openCertModal(2)" tabindex="0" role="button" aria-label="Inspect UiPath Specialized AI Associate Certification" class="glass-card rounded-2xl p-6 cursor-pointer flex flex-col justify-between group focus:outline-none focus:ring-2 focus:ring-cyanAccent">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-6">
+                <div class="w-12 h-12 rounded-xl bg-iceBlue/10 border border-iceBlue/40 flex items-center justify-center text-iceBlue">
+                  <i data-lucide="brain-circuit" class="w-6 h-6"></i>
+                </div>
+                <span class="px-2.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 font-mono text-[11px] text-emerald-400">ID: 131036374</span>
+              </div>
+              <div class="font-mono text-xs text-iceBlue uppercase tracking-wider">UiPath Certified Professional</div>
+              <h3 class="font-display text-xl font-bold text-white mt-2 group-hover:text-iceBlue transition-colors">
+                Specialized AI Associate Certification
+              </h3>
+              <p class="text-xs text-slate-400 mt-3 leading-relaxed">
+                Validates Intelligent Document Processing (IDP), UiPath Document Understanding, AI Center model deployment, and structured data extraction.
+              </p>
+            </div>
+            <div class="pt-6 mt-6 border-t border-white/10 flex items-center justify-between font-mono text-xs text-slate-300">
+              <span>Issuer: UiPath</span>
+              <span class="text-iceBlue flex items-center gap-1">Verify Credential <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i></span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Additional Academy Credential Banner -->
+        <div class="glass-card rounded-xl p-4 flex flex-wrap items-center justify-between gap-4 border border-white/10">
+          <div class="flex items-center gap-3">
+            <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-400"></i>
+            <span class="text-sm text-white font-semibold">Additional Verified Training:</span>
+            <span class="text-sm text-slate-300">UiPath Document Understanding Overview Certification (UiPath Academy)</span>
+          </div>
+          <span class="font-mono text-xs text-slate-400">Verified via Resume</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 7: INTERACTIVE ENGINEERING LAB + LIVE 3D RPA WORKSTATION
+         ========================================== -->
+    <section id="lab" class="py-20 lg:py-28 border-b border-white/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-cyanAccent/10 border border-cyanAccent/30 text-cyanAccent font-mono text-xs mb-3">
+              <i data-lucide="bot" class="w-3.5 h-3.5"></i> LIVE 3D RPA ROBOT EXECUTION WORKSTATION (SIMULATION)
+            </div>
+            <h2 class="font-display text-3xl sm:text-4xl font-bold text-white">Engineering Lab &amp; Live 3D Bot Playground</h2>
+            <p class="text-slate-400 text-sm mt-2 max-w-2xl">
+              Watch the 3D RPA Robot physically pick up incoming queue items, perform laser OCR/GenAI extraction, and commit validated records to the CMS/MySQL vault—or click any pipeline stage below to inspect telemetry.
+            </p>
+          </div>
+
+          <!-- Pipeline Selector -->
+          <div class="flex flex-wrap gap-2">
+            <button onclick="switchLabPipeline('reframework')" id="lab-btn-reframework" class="lab-pipe-btn px-4 py-2 rounded-lg font-mono text-xs bg-cyanAccent text-obsidian font-bold">
+              01. REFramework Queue Lifecycle
+            </button>
+            <button onclick="switchLabPipeline('agentic')" id="lab-btn-agentic" class="lab-pipe-btn px-4 py-2 rounded-lg font-mono text-xs bg-white/5 text-slate-300 border border-white/10 hover:border-cyanAccent">
+              02. Maestro Agentic + HITL Flow
+            </button>
+          </div>
+        </div>
+
+        <!-- LIVE 3D RPA WORKSTATION SIMULATOR -->
+        <div class="glass-card rounded-2xl p-5 sm:p-6 border border-cyanAccent/30 grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+          <!-- Left: 3D Industrial RPA Cell Canvas -->
+          <div class="lg:col-span-8 relative">
+            <div id="lab-3d-bot-container" class="w-full h-[360px] sm:h-[400px] rounded-xl bg-obsidian border border-white/10 relative overflow-hidden">
+              <!-- Station Labels Overlay -->
+              <div class="absolute top-3 left-3 right-3 flex flex-wrap items-center justify-between gap-2 pointer-events-none z-10 font-mono text-[11px]">
+                <span class="px-2.5 py-1 rounded bg-obsidian/85 border border-cyanAccent/40 text-cyanAccent">
+                  STATION A: INTAKE QUEUE
+                </span>
+                <span class="px-2.5 py-1 rounded bg-obsidian/85 border border-aiViolet/40 text-aiViolet">
+                  STATION B: IDP &amp; GENAI LASER OCR
+                </span>
+                <span class="px-2.5 py-1 rounded bg-obsidian/85 border border-emerald-400/40 text-emerald-400">
+                  STATION C: CMS &amp; MYSQL VAULT
+                </span>
+              </div>
+
+              <!-- Live Robot Action Status Bar -->
+              <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between bg-obsidian/90 border border-white/10 px-3.5 py-2 rounded-lg font-mono text-xs pointer-events-none z-10">
+                <div class="flex items-center gap-2">
+                  <span id="lab-bot-status-dot" class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
+                  <span id="lab-bot-action-text" class="text-white font-semibold">BOT_STATE: Fetching Queue Item [CDR-8841]...</span>
+                </div>
+                <span id="lab-bot-counter" class="text-cyanAccent">TX_PROCESSED: 142</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Robot Control Deck -->
+          <div class="lg:col-span-4 space-y-4 font-mono">
+            <div class="p-4 rounded-xl bg-obsidian border border-white/10 space-y-3">
+              <div class="text-xs text-cyanAccent uppercase tracking-wider flex items-center justify-between">
+                <span>Robot Control Deck</span>
+                <span class="text-[10px] px-2 py-0.5 rounded bg-white/5 text-slate-400">3-Axis WebGL</span>
+              </div>
+              <p class="font-sans text-xs text-slate-300 leading-relaxed">
+                Control the live 3D RPA Robotic Arm as it executes transaction cycles across your enterprise workflow stations.
+              </p>
+
+              <!-- Interactive Controls -->
+              <div class="grid grid-cols-2 gap-2 pt-1">
+                <button onclick="toggleLabBotSpeed()" id="btn-bot-speed" class="p-2.5 rounded-lg bg-cyanAccent/15 border border-cyanAccent/40 text-cyanAccent text-xs font-bold hover:bg-cyanAccent hover:text-obsidian transition-all">
+                  Speed: 1x Normal
+                </button>
+                <button onclick="toggleLabBotPause()" id="btn-bot-pause" class="p-2.5 rounded-lg bg-white/5 border border-white/15 text-white text-xs hover:border-cyanAccent transition-all">
+                  Pause Robot
+                </button>
+              </div>
+              <button onclick="triggerLabBotException()" class="w-full p-2.5 rounded-lg bg-amber-500/15 border border-amber-500/40 text-amber-300 text-xs font-bold hover:bg-amber-500 hover:text-obsidian transition-all flex items-center justify-center gap-1.5">
+                <i data-lucide="alert-triangle" class="w-3.5 h-3.5"></i>
+                Simulate Business Rule Exception (BRE)
+              </button>
+            </div>
+
+            <!-- Live Robot Telemetry Stream -->
+            <div class="p-4 rounded-xl bg-obsidian border border-white/10 space-y-2 text-xs">
+              <div class="text-slate-400 text-[10px] uppercase">Live Robot Execution Console:</div>
+              <div id="lab-bot-console" class="space-y-1 text-[11px] text-slate-300 h-28 overflow-y-auto">
+                <div class="text-emerald-400">[OK] REFramework Init: Config.xlsx loaded</div>
+                <div class="text-cyanAccent">[QUEUE] Connected to Orchestrator Queue</div>
+                <div class="text-aiViolet">[AI] IDP Document Understanding Ready</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Lab Workflow Stage Inspector -->
+        <div class="glass-card rounded-2xl p-6 sm:p-8 border border-white/15 space-y-8">
+          <div>
+            <div class="flex items-center justify-between text-xs font-mono text-slate-400 mb-4">
+              <span id="lab-pipeline-title">PIPELINE: UIPATH_REFRAMEWORK_TRANSACTION_ENGINE (SIMULATION)</span>
+              <span class="text-cyanAccent">Click any stage node below to inspect I/O payload</span>
+            </div>
+            <div id="lab-nodes-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3">
+              <!-- Populated via JS -->
+            </div>
+          </div>
+
+          <!-- Node Telemetry Inspector Output -->
+          <div id="lab-inspector" class="rounded-xl bg-obsidian border border-white/10 p-6 grid grid-cols-1 lg:grid-cols-12 gap-6 font-mono">
+            <!-- Populated via JS -->
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 8: CONTACT EXPERIENCE
+         ========================================== -->
+    <section id="contact" class="py-20 lg:py-28">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="glass-card rounded-3xl p-8 sm:p-12 border border-white/15 grid grid-cols-1 lg:grid-cols-12 gap-12">
+          
+          <!-- Left Info Column -->
+          <div class="lg:col-span-6 space-y-6">
+            <span class="font-mono text-xs uppercase tracking-widest text-cyanAccent">// 08. INITIATE CONNECTION</span>
+            <h2 class="font-display text-3xl sm:text-4xl font-bold text-white">Have a Workflow Worth Automating?</h2>
+            <p class="text-slate-300 leading-relaxed">
+              I'm interested in practical AI automation, enterprise workflow engineering, and Forward Deployed Engineering opportunities where I can solve real-world operational problems.
+            </p>
+
+            <!-- Direct Verified Channels -->
+            <div class="space-y-3 pt-2">
+              <a href="mailto:prathameshhulavale34@gmail.com" class="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/10 hover:border-cyanAccent transition-all group">
+                <div class="w-10 h-10 rounded-lg bg-cyanAccent/10 flex items-center justify-center text-cyanAccent">
+                  <i data-lucide="mail" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <div class="text-xs font-mono text-slate-400">Direct Email</div>
+                  <div class="text-sm font-mono text-white group-hover:text-cyanAccent transition-colors">prathameshhulavale34@gmail.com</div>
+                </div>
+              </a>
+
+              <a href="https://www.linkedin.com/in/prathamesh-hulavale/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/10 hover:border-cyanAccent transition-all group">
+                <div class="w-10 h-10 rounded-lg bg-iceBlue/10 flex items-center justify-center text-iceBlue">
+                  <i data-lucide="linkedin" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <div class="text-xs font-mono text-slate-400">LinkedIn Profile</div>
+                  <div class="text-sm font-mono text-white group-hover:text-iceBlue transition-colors">linkedin.com/in/prathamesh-hulavale</div>
+                </div>
+              </a>
+
+              <a href="https://github.com/unpaired777/Resume_Repo" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/10 hover:border-cyanAccent transition-all group">
+                <div class="w-10 h-10 rounded-lg bg-aiViolet/10 flex items-center justify-center text-aiViolet">
+                  <i data-lucide="github" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <div class="text-xs font-mono text-slate-400">GitHub &amp; Resume Repository</div>
+                  <div class="text-sm font-mono text-white group-hover:text-aiViolet transition-colors">github.com/unpaired777/Resume_Repo</div>
+                </div>
+              </a>
+
+              <!-- Interactive Resume Preview & Download Card -->
+              <div class="flex flex-wrap items-center justify-between gap-4 p-4 rounded-xl bg-white/5 border border-white/10 hover:border-cyanAccent transition-all">
+                <div class="flex items-center gap-4">
+                  <div class="w-10 h-10 rounded-lg bg-emerald-500/10 flex items-center justify-center text-emerald-400">
+                    <i data-lucide="file-badge" class="w-5 h-5"></i>
+                  </div>
+                  <div>
+                    <div class="text-xs font-mono text-slate-400">Curriculum Vitae (PDF)</div>
+                    <div class="text-sm font-mono text-white">Prathmesh Hulavale — 3+ Yrs UiPath &amp; AI</div>
+                  </div>
+                </div>
+                <div class="flex items-center gap-2">
+                  <button onclick="openResumeModal()" class="px-3 py-1.5 rounded bg-white/10 text-xs font-mono text-white hover:bg-white/20 transition-all">
+                    Preview
+                  </button>
+                  <a href="./Prathmesh_Hulavale_Resume.pdf" download="Prathmesh_Hulavale_AI_Automation_Engineer_Resume.pdf" class="px-3 py-1.5 rounded bg-cyanAccent text-obsidian text-xs font-mono font-bold hover:bg-iceBlue transition-all">
+                    Download
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Validated Form Column -->
+          <div class="lg:col-span-6">
+            <form id="contact-form" class="space-y-4 bg-obsidian/80 p-6 sm:p-8 rounded-2xl border border-white/10" novalidate>
+              <div class="flex items-center justify-between border-b border-white/10 pb-3 mb-2">
+                <span class="font-mono text-xs text-slate-300 uppercase">Dispatch Message Packet</span>
+                <span class="font-mono text-[11px] text-emerald-400">Client-Validated Mailto Bridge</span>
+              </div>
+
+              <!-- Honeypot Spam Trap -->
+              <input type="text" id="website-hp" name="website" class="hidden" tabindex="-1" autocomplete="off" />
+
+              <div>
+                <label for="sender-name" class="block font-mono text-xs text-slate-300 uppercase mb-1.5">Your Name *</label>
+                <input type="text" id="sender-name" required placeholder="e.g., Engineering Hiring Manager" class="w-full px-4 py-3 rounded-lg bg-graphite border border-white/15 text-white text-sm focus:outline-none focus:border-cyanAccent" />
+              </div>
+
+              <div>
+                <label for="sender-email" class="block font-mono text-xs text-slate-300 uppercase mb-1.5">Your Email *</label>
+                <input type="email" id="sender-email" required placeholder="name@company.com" class="w-full px-4 py-3 rounded-lg bg-graphite border border-white/15 text-white text-sm focus:outline-none focus:border-cyanAccent" />
+              </div>
+
+              <div>
+                <label for="sender-message" class="block font-mono text-xs text-slate-300 uppercase mb-1.5">Workflow Challenge or Opportunity *</label>
+                <textarea id="sender-message" rows="4" required placeholder="Describe the automation role, enterprise workflow bottleneck, or FDE project..." class="w-full px-4 py-3 rounded-lg bg-graphite border border-white/15 text-white text-sm focus:outline-none focus:border-cyanAccent"></textarea>
+              </div>
+
+              <div id="form-feedback" class="hidden p-3 rounded-lg font-mono text-xs" role="alert"></div>
+
+              <button type="submit" class="w-full py-3.5 px-6 rounded-lg bg-cyanAccent text-obsidian font-display font-bold text-sm hover:bg-iceBlue transition-all flex items-center justify-center gap-2">
+                <i data-lucide="send" class="w-4 h-4"></i>
+                Prepare Verified Email Dispatch
+              </button>
+              <p class="text-[11px] font-mono text-slate-400 text-center">
+                Note: Submitting validates your inputs and opens your default mail client pre-addressed to <span class="text-slate-300">prathameshhulavale34@gmail.com</span>.
+              </p>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-white/10 py-8 bg-obsidian font-mono text-xs text-slate-400">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>© 2026 Prathmesh Hulavale • AI Automation Engineer &amp; UiPath Developer</div>
+      <div class="flex items-center gap-6">
+        <button onclick="openResumeModal()" class="hover:text-cyanAccent">View Resume</button>
+        <a href="https://www.linkedin.com/in/prathamesh-hulavale/" target="_blank" rel="noopener noreferrer" class="hover:text-cyanAccent">LinkedIn</a>
+        <a href="https://github.com/unpaired777/Resume_Repo" target="_blank" rel="noopener noreferrer" class="hover:text-cyanAccent">GitHub</a>
+        <a href="#home" class="hover:text-cyanAccent">Back to Top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       DYNAMIC MODAL: PROJECT ARCHITECTURE VIEW
+       ========================================== -->
+  <div id="project-modal" class="fixed inset-0 z-50 hidden bg-obsidian/85 backdrop-blur-md flex items-center justify-center p-4 overflow-y-auto" role="dialog" aria-modal="true" aria-labelledby="modal-proj-title">
+    <div class="glass-card rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto border border-cyanAccent/40 p-6 sm:p-8 space-y-6 relative">
+      <div class="flex items-start justify-between gap-4 border-b border-white/10 pb-4 sticky top-0 bg-graphite/95 backdrop-blur py-2 z-10">
+        <div>
+          <span id="modal-proj-category" class="font-mono text-xs text-cyanAccent uppercase"></span>
+          <h3 id="modal-proj-title" class="font-display text-2xl font-bold text-white mt-1"></h3>
+        </div>
+        <button onclick="closeProjectModal()" aria-label="Close modal" class="p-2 rounded-lg bg-white/5 text-slate-300 hover:text-white hover:bg-white/10">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+      <div id="modal-proj-body" class="space-y-6 text-sm text-slate-300">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       DYNAMIC MODAL: CERTIFICATION INSPECTOR
+       ========================================== -->
+  <div id="cert-modal" class="fixed inset-0 z-50 hidden bg-obsidian/85 backdrop-blur-md flex items-center justify-center p-4" role="dialog" aria-modal="true" aria-labelledby="modal-cert-title">
+    <div class="glass-card rounded-2xl max-w-lg w-full border border-cyanAccent/40 p-6 sm:p-8 space-y-5">
+      <div class="flex items-start justify-between gap-4 border-b border-white/10 pb-4">
+        <div>
+          <span class="font-mono text-xs text-cyanAccent uppercase">Verified Credential Record</span>
+          <h3 id="modal-cert-title" class="font-display text-xl font-bold text-white mt-1"></h3>
+        </div>
+        <button onclick="closeCertModal()" aria-label="Close certification modal" class="p-2 rounded-lg bg-white/5 text-slate-300 hover:text-white">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+      <div id="modal-cert-body" class="space-y-4 text-sm text-slate-300 font-mono"></div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       DYNAMIC MODAL: INTERACTIVE PDF RESUME VIEWER
+       ========================================== -->
+  <div id="resume-modal" class="fixed inset-0 z-50 hidden bg-obsidian/90 backdrop-blur-md flex items-center justify-center p-3 sm:p-6" role="dialog" aria-modal="true" aria-labelledby="modal-resume-title">
+    <div class="glass-card rounded-2xl max-w-5xl w-full h-[90vh] flex flex-col border border-cyanAccent/40 overflow-hidden shadow-2xl">
+      
+      <!-- Top Control & Download Bar -->
+      <div class="flex flex-wrap items-center justify-between gap-4 px-5 py-4 border-b border-white/10 bg-graphite/95">
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-lg bg-cyanAccent/10 border border-cyanAccent/30 flex items-center justify-center text-cyanAccent">
+            <i data-lucide="file-text" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <span class="font-mono text-[10px] text-cyanAccent uppercase tracking-wider block">Official Curriculum Vitae</span>
+            <h3 id="modal-resume-title" class="font-display text-base sm:text-lg font-bold text-white leading-tight">
+              Prathmesh Hulavale — AI Automation &amp; UiPath Developer
+            </h3>
+          </div>
+        </div>
+
+        <!-- Action Buttons: Download, Open in New Tab, Close -->
+        <div class="flex items-center gap-2.5">
+          <!-- Direct Download Button -->
+          <a href="./Prathmesh_Hulavale_Resume.pdf" 
+             download="Prathmesh_Hulavale_AI_Automation_Engineer_Resume.pdf" 
+             class="px-4 py-2 rounded-lg bg-cyanAccent text-obsidian font-display font-bold text-xs hover:bg-iceBlue transition-all flex items-center gap-2 glow-cyan">
+            <i data-lucide="download" class="w-4 h-4"></i>
+            Download PDF
+          </a>
+
+          <!-- Open in New Tab -->
+          <a href="./Prathmesh_Hulavale_Resume.pdf" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="hidden sm:inline-flex px-3.5 py-2 rounded-lg bg-white/5 border border-white/10 text-slate-200 hover:text-cyanAccent hover:border-cyanAccent font-mono text-xs transition-all items-center gap-1.5">
+            <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            Open Full Tab
+          </a>
+
+          <!-- Close Modal Button -->
+          <button onclick="closeResumeModal()" aria-label="Close resume viewer" class="p-2 rounded-lg bg-white/5 border border-white/10 text-slate-300 hover:text-white hover:bg-rose-500/20 hover:border-rose-500/40 transition-all">
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Embedded PDF Viewer Body -->
+      <div class="flex-1 bg-obsidian relative w-full h-full overflow-hidden">
+        <object 
+          data="./Prathmesh_Hulavale_Resume.pdf#toolbar=1&navpanes=0&scrollbar=1&view=FitH" 
+          type="application/pdf" 
+          class="w-full h-full">
+          
+          <!-- Automatic Fallback if PDF file isn't placed in folder yet or on Mobile Browsers -->
+          <div class="flex flex-col items-center justify-center h-full p-8 text-center space-y-4 overflow-y-auto">
+            <div class="w-14 h-14 rounded-2xl bg-cyanAccent/10 border border-cyanAccent/30 flex items-center justify-center text-cyanAccent">
+              <i data-lucide="file-check" class="w-7 h-7"></i>
+            </div>
+            <h4 class="font-display text-xl font-bold text-white">Prathmesh Hulavale — Resume Dossier</h4>
+            <p class="text-sm text-slate-300 max-w-lg leading-relaxed">
+              Results-driven UiPath RPA Developer with 3+ years of experience building scalable enterprise automations using REFramework, Document Understanding, Agent Builder, Maestro Flow, Python, and MySQL.
+            </p>
+            <div class="p-4 rounded-xl bg-white/5 border border-white/10 text-left text-xs font-mono text-slate-300 max-w-lg w-full space-y-1.5">
+              <div><span class="text-cyanAccent">CURRENT:</span> RPA Developer (UiPath) - Legal Analyst @ CMA CGM GBSI (Nov 2025 – Present)</div>
+              <div><span class="text-cyanAccent">PREVIOUS:</span> RPA Developer (UiPath) @ ANZA Solutions LLP (Oct 2023 – Nov 2025)</div>
+              <div><span class="text-cyanAccent">EDUCATION:</span> BSc (Information Technology), University of Mumbai (Mar 2022)</div>
+              <div><span class="text-cyanAccent">CERTS:</span> 3x UiPath Certified (Automation Dev Pro, Agentic Associate, Specialized AI Associate)</div>
+            </div>
+            <div class="flex flex-wrap justify-center gap-3 pt-2">
+              <a href="./Prathmesh_Hulavale_Resume.pdf" download="Prathmesh_Hulavale_AI_Automation_Engineer_Resume.pdf" class="px-5 py-2.5 rounded-lg bg-cyanAccent text-obsidian font-display font-bold text-xs flex items-center gap-2">
+                <i data-lucide="download" class="w-4 h-4"></i> Download Resume PDF
+              </a>
+              <a href="https://github.com/unpaired777/Resume_Repo" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-lg bg-white/10 border border-white/15 text-white font-mono text-xs font-semibold flex items-center gap-2">
+                <i data-lucide="github" class="w-4 h-4"></i> View on GitHub Repo ↗
+              </a>
+            </div>
+          </div>
+
+        </object>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ==========================================
+       APPLICATION DATA & INTERACTIVE CONTROLLERS
+       ========================================== -->
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // Mobile Menu Toggle
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileBtn.addEventListener('click', () => {
+      const expanded = mobileBtn.getAttribute('aria-expanded') === 'true';
+      mobileBtn.setAttribute('aria-expanded', !expanded);
+      mobileMenu.classList.toggle('hidden');
+    });
+    document.querySelectorAll('.mobile-nav-link').forEach(link => {
+      link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+    });
+
+    // ---------------------------------------------------------
+    // 1. FORWARD DEPLOYED ENGINEERING (FDE) STAGES DATA
+    // ---------------------------------------------------------
+    const fdeStages = [
+      {
+        stage: "01 // DISCOVER",
+        title: "Operational Discovery & Process Assessment",
+        summary: "Partner directly with domain stakeholders (such as maritime lawyers or legal conveyancing teams) to observe live operations, capture edge cases, and author formal Process Design Documents (PDD).",
+        inputs: "Stakeholder interviews, raw email/ticket samples, SLA constraints, compliance rules.",
+        outputs: "Signed-off Process Design Document (PDD) & automation feasibility matrix."
+      },
+      {
+        stage: "02 // DIAGNOSE",
+        title: "Workflow Mapping & Failure-Point Diagnosis",
+        summary: "Deconstruct legacy manual processes across Case Management Systems (CMS), portals, and spreadsheets to isolate high-latency steps, unstructured document bottlenecks, and Business Rule Exceptions (BRE).",
+        inputs: "As-Is workflow recordings, CMS schema definitions, historical exception logs.",
+        outputs: "Target state workflow map separating deterministic RPA tasks from AI extraction nodes."
+      },
+      {
+        stage: "03 // PROTOTYPE",
+        title: "Solution Design (SDD) & Rapid PoC Validation",
+        summary: "Build modular proofs-of-concept in UiPath Studio, Agent Builder, and Python to validate OCR/LLM extraction accuracy and portal selectors before committing to full-scale engineering.",
+        inputs: "Sample unstructured PDFs, test environment credentials, queue schemas.",
+        outputs: "Solution Design Document (SDD) & validated extraction/orchestration prototype."
+      },
+      {
+        stage: "04 // INTEGRATE",
+        title: "Enterprise System, Python & Maestro Orchestration",
+        summary: "Implement production workflows using UiPath REFramework, Orchestrator Queues, Python scripts, MySQL databases, REST APIs, and UiPath Maestro Flow for Human-in-the-Loop (HITL) coordination.",
+        inputs: "Modular XAML workflows, Python modules, MySQL queries, API payloads, Agent prompts.",
+        outputs: "End-to-end integrated automation pipeline with strict state management."
+      },
+      {
+        stage: "05 // VALIDATE",
+        title: "Exception Resilience & Compliance Verification",
+        summary: "Stress-test retry mechanisms, system vs. business exception routing, AML compliance cross-checks, and audit trail generation to guarantee zero silent failures in production.",
+        inputs: "UAT test cases, malformed document payloads, simulated portal timeouts.",
+        outputs: "UAT sign-off, audit log verification, and resilient error recovery handlers."
+      },
+      {
+        stage: "06 // DEPLOY & ITERATE",
+        title: "Orchestrator Scheduling, Telemetry & Continuous Improvement",
+        summary: "Deploy unattended/attended bots and Maestro agentic flows via UiPath Orchestrator, configure assets and triggers, monitor queue throughput, and iteratively refine prompts and rules.",
+        inputs: "Production Orchestrator logs, stakeholder feedback reports, bot run summaries.",
+        outputs: "Measured reduction in manual workload and high-reliability production runs."
+      }
+    ];
+
+    function selectFdeStage(index) {
+      document.querySelectorAll('.fde-tab').forEach((tab, idx) => {
+        if (idx === index) {
+          tab.className = "fde-tab p-3.5 rounded-xl border border-cyanAccent bg-cyanAccent/10 text-left transition-all";
+          tab.querySelector('span:first-child').className = "font-mono text-xs text-cyanAccent block";
+        } else {
+          tab.className = "fde-tab p-3.5 rounded-xl border border-white/10 bg-white/5 hover:border-white/30 text-left transition-all";
+          tab.querySelector('span:first-child').className = "font-mono text-xs text-slate-400 block";
+        }
+      });
+      const data = fdeStages[index];
+      document.getElementById('fde-stage-content').innerHTML = `
+        <div class="md:col-span-2 space-y-2">
+          <div class="font-mono text-xs text-cyanAccent">${data.stage}</div>
+          <h4 class="font-display text-lg font-bold text-white">${data.title}</h4>
+          <p class="text-sm text-slate-300 leading-relaxed">${data.summary}</p>
+        </div>
+        <div class="space-y-3 font-mono text-xs border-t md:border-t-0 md:border-l border-white/10 pt-4 md:pt-0 md:pl-6">
+          <div>
+            <span class="text-slate-400 block">STAGE INPUTS:</span>
+            <span class="text-slate-200">${data.inputs}</span>
+          </div>
+          <div>
+            <span class="text-emerald-400 block">VERIFIED DELIVERABLE:</span>
+            <span class="text-slate-200">${data.outputs}</span>
+          </div>
+        </div>
+      `;
+    }
+    selectFdeStage(0);
+
+    // ---------------------------------------------------------
+    // 2. VERIFIED SKILLS DATA & FILTERING
+    // ---------------------------------------------------------
+    const skillsData = [
+      {
+        name: "UiPath Studio, Orchestrator & Assistant",
+        category: "Enterprise Automation",
+        tier: "Production Enterprise Experience",
+        evidence: "3+ years managing unattended/attended bots, queues, assets, and scheduling at CMA CGM GBSI & ANZA Solutions.",
+        projects: ["CDR Invoicing Automation", "SDLT Submission Process"]
+      },
+      {
+        name: "Robotic Enterprise Framework (REFramework)",
+        category: "Enterprise Automation",
+        tier: "Production Enterprise Experience",
+        evidence: "Architected transactional state machines with robust system retry logic, Business Rule Exceptions (BRE), and centralized logging.",
+        projects: ["Claims Dispatch Allocation Bot", "File Opening (MOA) Process"]
+      },
+      {
+        name: "UiPath Maestro Flow & Agentic Business Orchestration",
+        category: "AI Automation",
+        tier: "Hands-On Agentic & Certified Practice",
+        evidence: "Hands-on experience orchestrating multi-step autonomous AI agents, deterministic RPA bots, and long-running business workflows in UiPath Maestro.",
+        projects: ["Autonomous Background Verification Agent"]
+      },
+      {
+        name: "UiPath Agent Builder & Autonomous AI Agents",
+        category: "AI Automation",
+        tier: "Hands-On Agentic & Certified Practice",
+        evidence: "UiPath Certified Agentic Automation Associate; engineered goal-driven AI agents with tool-calling, context grounding (RAG), and structured outputs.",
+        projects: ["Autonomous Background Verification Agent"]
+      },
+      {
+        name: "Human-in-the-Loop (HITL) & Action Center Escalations",
+        category: "AI Automation",
+        tier: "Hands-On Agentic & Certified Practice",
+        evidence: "Designed seamless human approval handoffs and exception validation workflows connecting AI agents with Slack, Email, and UiPath Action Center.",
+        projects: ["Autonomous Background Verification Agent", "Claims Dispatch Allocation Bot"]
+      },
+      {
+        name: "Document Understanding (IDP), OCR & GenAI Extraction",
+        category: "AI Automation",
+        tier: "Production Enterprise Experience",
+        evidence: "UiPath Specialized AI Associate; leveraged GenAI & IDP to extract unstructured claims and legal data from PDFs and emails.",
+        projects: ["Claims Dispatch Allocation Bot", "CDR Invoicing Automation"]
+      },
+      {
+        name: "Python for AI Automation & Code-First Workflows",
+        category: "Integration & Engineering",
+        tier: "Active Code & FDE Skill Expansion",
+        evidence: "Hands-on Python programming for data transformation, REST API orchestration, and building code-based agentic automation pipelines.",
+        projects: ["Python Agentic Workflows", "API & Data Scripting"]
+      },
+      {
+        name: "Database Automation (MySQL / SQL)",
+        category: "Integration & Engineering",
+        tier: "Production Enterprise Experience",
+        evidence: "Integrated MySQL persistence for account reference verification, SDLT leasehold records, and audit trail management.",
+        projects: ["SDLT Submission Process", "File Opening (MOA) Process"]
+      },
+      {
+        name: "REST APIs, Webhooks, Email, PDF, Excel & SAP",
+        category: "Integration & Engineering",
+        tier: "Production Enterprise Experience",
+        evidence: "Connected Case Management Systems (CMS), First AML portals, Slack/Email connectors, and structured JSON/Excel/PDF reporting.",
+        projects: ["File Opening (MOA) Process", "Autonomous Background Verification Agent"]
+      },
+      {
+        name: "Version Control (GitHub) & CI/CD Workflows",
+        category: "Integration & Engineering",
+        tier: "Production Enterprise Experience",
+        evidence: "Managed source control, peer code reviews, and collaborative repository governance across automation delivery teams.",
+        projects: ["All Enterprise & Agentic Repositories"]
+      },
+      {
+        name: "Forward Deployed Discovery (PDD / SDD) & Stakeholder Ops",
+        category: "Forward Deployed Engineering",
+        tier: "Production Enterprise Experience",
+        evidence: "Collaborated directly with maritime lawyers, onshore/offshore ops, and fee earners to translate ambiguous business bottlenecks into production systems.",
+        projects: ["CDR Invoicing Automation", "File Opening (MOA) Process"]
+      },
+      {
+        name: "Exception Architecture, Debugging & Production Support",
+        category: "Forward Deployed Engineering",
+        tier: "Production Enterprise Experience",
+        evidence: "Root-cause analysis, bot performance optimization, and discrepancy notification workflows across live enterprise queues.",
+        projects: ["Claims Dispatch Allocation Bot", "SDLT Submission Process"]
+      }
+    ];
+
+    function renderSkills(filter = 'all') {
+      const container = document.getElementById('skills-grid');
+      const filtered = filter === 'all' ? skillsData : skillsData.filter(s => s.category === filter);
+      container.innerHTML = filtered.map(skill => {
+        let dotColor = 'bg-aiViolet';
+        if (skill.tier.includes("Production")) dotColor = 'bg-emerald-400';
+        if (skill.tier.includes("Active Code")) dotColor = 'bg-amber-300';
+        return `
+          <div class="glass-card rounded-xl p-5 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="font-mono text-[11px] uppercase px-2.5 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10">${skill.category}</span>
+                <span class="w-2.5 h-2.5 rounded-full ${dotColor}" title="${skill.tier}"></span>
+              </div>
+              <h3 class="font-display font-bold text-base text-white">${skill.name}</h3>
+              <p class="text-xs text-slate-300 mt-2 leading-relaxed">${skill.evidence}</p>
+            </div>
+            <div class="pt-4 mt-4 border-t border-white/10">
+              <span class="font-mono text-[10px] uppercase text-slate-400 block mb-1">Verified Evidence / Scope:</span>
+              <div class="flex flex-wrap gap-1.5">
+                ${skill.projects.map(p => `<span class="text-[11px] font-mono text-cyanAccent bg-cyanAccent/10 px-2 py-0.5 rounded">${p}</span>`).join('')}
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function filterSkills(category) {
+      document.querySelectorAll('.skill-filter-btn').forEach(btn => {
+        if (btn.dataset.filter === category) {
+          btn.className = "skill-filter-btn active px-3.5 py-2 rounded-lg font-mono text-xs bg-cyanAccent text-obsidian font-bold transition-all";
+        } else {
+          btn.className = "skill-filter-btn px-3.5 py-2 rounded-lg font-mono text-xs bg-white/5 text-slate-300 border border-white/10 hover:border-cyanAccent transition-all";
+        }
+      });
+      renderSkills(category);
+    }
+    renderSkills();
+
+    // ---------------------------------------------------------
+    // 3. VERIFIED PROJECTS DATA & ARCHITECTURE MODALS
+    // ---------------------------------------------------------
+    const projectsData = [
+      {
+        id: "cdr-invoicing",
+        title: "CDR Invoicing Automation",
+        organization: "CMA CGM GBSI — Legal Department",
+        category: "Enterprise RPA",
+        status: "Production System (Nov 2025 – Present)",
+        summary: "End-to-end UiPath automation streamlining global Container Damage Recovery (CDR) legal claims, validation, pricing, CMS maintenance, and stakeholder invoice distribution.",
+        problem: "Maritime legal analysts manually processed high volumes of Air and Ocean container damage claims—requiring multi-step container number verification, damage location mapping, complex payer determination rules, and manual CMS invoice generation.",
+        whyItMatters: "Manual claim handling creates billing bottlenecks, compliance risks, and delayed recovery cycles across global shipping operations.",
+        solution: "Engineered a resilient UiPath automation workflow that validates container identifiers, applies deterministic payer logic, inputs damage dimensions/pricing into the Case Management System (CMS), appends legal case comments, and dispatches invoices automatically.",
+        nodes: ["Claim Intake & Container Extraction", "Container Number Validation", "Damage Location & Payer Rule Engine", "CMS Record & Price Update", "Automated Invoice Generation & Dispatch"],
+        tech: ["UiPath Studio", "REFramework", "CMS Integration", "Excel / PDF Automation", "Email Automation"],
+        challenges: "Handling varied regional claim documentation formats and enforcing strict legal compliance validations before invoice generation.",
+        errorHandling: "Structured Business Rule Exceptions (BRE) for invalid container IDs or missing payer mappings, with automated discrepancy alerts routed to maritime legal analysts.",
+        outcomes: "Verified improvement in process accuracy, significant reduction in manual analyst workload, and accelerated end-to-end maritime claim recovery cycles."
+      },
+      {
+        id: "ceva-claims",
+        title: "Claims Dispatch Allocation Bot",
+        organization: "CMA CGM GBSI — Legal Department",
+        category: "AI & Hybrid",
+        status: "Production System",
+        summary: "Hybrid GenAI + UiPath automation that extracts unstructured claim data from documents and executes rule-based dispatch allocation across enterprise Case Management Systems.",
+        problem: "Incoming logistics and freight claims arrived with unstructured supporting documentation, requiring manual reading, data entry, and triage before allocation in the CMS.",
+        whyItMatters: "Unstructured document backlogs delay claim triage and require repetitive human intervention.",
+        solution: "Built an end-to-end UiPath bot integrated with Generative AI extraction capabilities to parse unstructured claim documents, populate CMS fields, execute rule-based allocation logic, and generate stakeholder tracking reports.",
+        nodes: ["CMS Claim Queue Trigger", "GenAI Unstructured Document Extraction", "Data Validation & Cross-System Sync", "Rule-Based Allocation Engine", "Stakeholder Summary Report Dispatch"],
+        tech: ["UiPath Studio", "Generative AI Extraction", "REFramework", "CMS Integration", "Automated Reporting"],
+        challenges: "Ensuring deterministic validation on top of probabilistic GenAI document extraction outputs.",
+        errorHandling: "Implemented automated retry mechanisms, structured exception logging, and confidence-based human review routing.",
+        outcomes: "Improved cross-system data accuracy, reduced manual triage intervention, and established transparent audit reporting for processed claims."
+      },
+      {
+        id: "agentic-bgv",
+        title: "Autonomous Background Verification Agent",
+        organization: "Agentic Automation Architecture (UiPath Maestro)",
+        category: "Agentic Workflow",
+        status: "Verified Practice Architecture (GitHub)",
+        summary: "Autonomous multi-system AI agent built with UiPath Agent Builder, RPA workflows, Slack, and Email connectors—orchestrated end-to-end via UiPath Maestro Flow with Human-in-the-Loop.",
+        problem: "Employee background verification requires asynchronous candidate follow-ups, multi-document validation, and cross-team escalations that stall traditional linear RPA bots.",
+        whyItMatters: "Demonstrates next-generation Agentic Business Orchestration where AI agents autonomously coordinate tools, RPA bots, and human approvals.",
+        solution: "Designed an autonomous Background Verification Agent in UiPath Agent Builder orchestrated by UiPath Maestro. The agent communicates via Email and Slack, invokes RPA workflows to validate candidate documents, and escalates anomalies to human reviewers.",
+        nodes: ["Candidate Onboarding Trigger", "UiPath Maestro Orchestration Core", "Agent Builder Document Validation", "Autonomous Email & Slack Follow-up", "Human-in-the-Loop Escalation / Approval"],
+        tech: ["UiPath Agent Builder", "UiPath Maestro Flow", "Human-in-the-Loop (HITL)", "UiPath RPA Workflows", "Slack & Email Connectors"],
+        challenges: "Coordinating stateful long-running conversations and determining when the agent should act autonomously versus escalating to HR.",
+        errorHandling: "Maestro-governed escalation pathways and real-time Slack alerts whenever candidate documents fail validation thresholds.",
+        outcomes: "Enabled faster, scalable, and autonomous background verification workflows with minimal human intervention.",
+        github: "https://github.com/unpaired777/Resume_Repo"
+      },
+      {
+        id: "moa-file-opening",
+        title: "Legal File Opening (MOA) & AML Compliance Engine",
+        organization: "ANZA Solutions LLP",
+        category: "Enterprise RPA",
+        status: "Production System (Oct 2023 – Nov 2025)",
+        summary: "Comprehensive UiPath and MySQL automation handling Money on Account (MOA) emails, CMS validation, First AML compliance checks, SDLT calculations, and client PDF advisories.",
+        problem: "Conveyancing teams manually processed incoming MOA emails, cross-checked client/mortgage records in CMS, ran First AML compliance checks, and generated payment advice PDFs.",
+        whyItMatters: "Financial and anti-money-laundering (AML) onboarding requires 100% audit integrity and rapid turnaround for fee earners.",
+        solution: "Developed a multi-stage UiPath + MySQL automation that parses MOA emails, validates CMS case records, downloads and populates instruction forms, runs First AML compliance checks, activates files, updates client warning cards, and dispatches PDF payment advices.",
+        nodes: ["MOA Email Intake & Parsing", "CMS & MySQL Cross-Validation", "First AML Compliance Verification", "SDLT Calculation & File Activation", "PDF Payment Advice & Fee Earner Alert"],
+        tech: ["UiPath Studio", "MySQL", "Case Management System (CMS)", "First AML", "PDF & Email Automation"],
+        challenges: "Maintaining strict document integrity and synchronizing state across CMS, MySQL, and external AML portals.",
+        errorHandling: "Automated discrepancy notifications sent immediately to Fee Earners and Ops teams whenever client or mortgage records mismatched.",
+        outcomes: "Guaranteed full audit trail compliance in CMS, streamlined cross-team communication, and eliminated manual onboarding bottlenecks."
+      },
+      {
+        id: "sdlt-submission",
+        title: "End-to-End UK SDLT Portal Submission & MySQL Pipeline",
+        organization: "ANZA Solutions LLP",
+        category: "Enterprise RPA",
+        status: "Production System (Oct 2023 – Nov 2025)",
+        summary: "Queue-driven UiPath and MySQL automation that calculates leasehold Stamp Duty Land Tax (SDLT), submits filings on the official portal, captures UTRN numbers, and dispatches completion statements.",
+        problem: "Processing Stamp Duty Land Tax submissions required extracting account references from emails, retrieving CMS case data, computing complex leasehold calculations, manual portal entry, and UTRN document updates.",
+        whyItMatters: "Tax submission errors or missed deadlines carry severe regulatory and financial consequences.",
+        solution: "Architected an Orchestrator queue-backed UiPath solution that extracts email attachments, retrieves CMS details, computes leasehold SDLT in Excel, submits returns on the SDLT portal, captures the Unique Transaction Reference Number (UTRN), updates MySQL records, and emails forms to onshore teams.",
+        nodes: ["Email Attachment & Queue Ingestion", "CMS Retrieval & Leasehold SDLT Calc", "Automated SDLT Portal Submission", "UTRN Capture & Document Update", "MySQL Persistence & Final Bot Audit Report"],
+        tech: ["UiPath Orchestrator Queues", "UiPath Studio", "MySQL", "Excel Calculation Engine", "Web Portal Automation"],
+        challenges: "Handling conditional portal workflows when SDLT amounts exceeded zero and preventing duplicate database submissions.",
+        errorHandling: "Database account-reference verification prior to portal submission, business rule exception handling, and comprehensive run summary reports.",
+        outcomes: "Delivered reliable, auditable end-to-end tax submissions with automated UTRN reconciliation and onshore reporting."
+      }
+    ];
+
+    function renderProjects(filter = 'all') {
+      const container = document.getElementById('projects-grid');
+      const filtered = filter === 'all' ? projectsData : projectsData.filter(p => p.category === filter);
+      container.innerHTML = filtered.map(proj => `
+        <article class="glass-card rounded-2xl p-6 sm:p-7 flex flex-col justify-between group">
+          <div>
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
+              <span class="px-3 py-1 rounded-full bg-cyanAccent/10 border border-cyanAccent/30 font-mono text-xs text-cyanAccent">${proj.category}</span>
+              <span class="font-mono text-xs text-slate-400">${proj.organization}</span>
+            </div>
+            <h3 class="font-display text-2xl font-bold text-white group-hover:text-cyanAccent transition-colors">${proj.title}</h3>
+            <p class="text-sm text-slate-300 mt-3 leading-relaxed">${proj.summary}</p>
+
+            <!-- Mini Visual Workflow Nodes Preview -->
+            <div class="mt-5 p-3.5 rounded-xl bg-obsidian/70 border border-white/10">
+              <span class="font-mono text-[10px] uppercase tracking-wider text-slate-400 block mb-2">System Pipeline Topology:</span>
+              <div class="flex flex-wrap items-center gap-1.5 font-mono text-[11px]">
+                ${proj.nodes.map((n, i) => `
+                  <span class="px-2 py-1 rounded bg-white/5 text-slate-200 border border-white/10">${n}</span>
+                  ${i < proj.nodes.length - 1 ? '<span class="text-cyanAccent">→</span>' : ''}
+                `).join('')}
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-6 mt-6 border-t border-white/10 flex flex-wrap items-center justify-between gap-4">
+            <div class="flex flex-wrap gap-1.5">
+              ${proj.tech.slice(0, 3).map(t => `<span class="font-mono text-[11px] text-slate-400 bg-white/5 px-2 py-0.5 rounded">#${t}</span>`).join('')}
+            </div>
+            <button onclick="openProjectModal('${proj.id}')" class="px-4 py-2 rounded-lg bg-cyanAccent/15 border border-cyanAccent/40 text-cyanAccent font-mono text-xs font-semibold hover:bg-cyanAccent hover:text-obsidian transition-all flex items-center gap-1.5">
+              Inspect Architecture <i data-lucide="maximize-2" class="w-3.5 h-3.5"></i>
+            </button>
+          </div>
+        </article>
+      `).join('');
+      lucide.createIcons();
+    }
+
+    function filterProjects(category) {
+      document.querySelectorAll('.proj-filter-btn').forEach(btn => {
+        if (btn.dataset.projFilter === category) {
+          btn.className = "proj-filter-btn px-3.5 py-2 rounded-lg font-mono text-xs bg-cyanAccent text-obsidian font-bold transition-all";
+        } else {
+          btn.className = "proj-filter-btn px-3.5 py-2 rounded-lg font-mono text-xs bg-white/5 text-slate-300 border border-white/10 hover:border-cyanAccent transition-all";
+        }
+      });
+      renderProjects(category);
+    }
+    renderProjects();
+
+    function openProjectModal(id) {
+      const p = projectsData.find(item => item.id === id);
+      if (!p) return;
+      document.getElementById('modal-proj-category').textContent = `${p.category} • ${p.status}`;
+      document.getElementById('modal-proj-title').textContent = p.title;
+      document.getElementById('modal-proj-body').innerHTML = `
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="p-4 rounded-xl bg-obsidian border border-white/10">
+            <h4 class="font-mono text-xs uppercase text-cyanAccent mb-1">Business Problem</h4>
+            <p>${p.problem}</p>
+          </div>
+          <div class="p-4 rounded-xl bg-obsidian border border-white/10">
+            <h4 class="font-mono text-xs uppercase text-aiViolet mb-1">Operational Impact</h4>
+            <p>${p.whyItMatters}</p>
+          </div>
+        </div>
+
+        <div class="p-4 rounded-xl bg-obsidian border border-white/10">
+          <h4 class="font-mono text-xs uppercase text-emerald-400 mb-1">Engineered Solution Architecture</h4>
+          <p>${p.solution}</p>
+        </div>
+
+        <div class="p-4 rounded-xl bg-obsidian border border-cyanAccent/30">
+          <h4 class="font-mono text-xs uppercase text-cyanAccent mb-3">End-to-End Execution Pipeline</h4>
+          <div class="grid grid-cols-1 sm:grid-cols-5 gap-2 font-mono text-xs">
+            ${p.nodes.map((node, idx) => `
+              <div class="p-2.5 rounded bg-white/5 border border-white/10">
+                <span class="text-cyanAccent block text-[10px]">STAGE 0${idx + 1}</span>
+                <span class="text-white font-semibold mt-1 block">${node}</span>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="p-4 rounded-xl bg-obsidian border border-white/10">
+            <h4 class="font-mono text-xs uppercase text-amber-400 mb-1">Implementation Challenges</h4>
+            <p>${p.challenges}</p>
+          </div>
+          <div class="p-4 rounded-xl bg-obsidian border border-white/10">
+            <h4 class="font-mono text-xs uppercase text-iceBlue mb-1">Exception Handling &amp; Reliability</h4>
+            <p>${p.errorHandling}</p>
+          </div>
+        </div>
+
+        <div class="p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/30">
+          <h4 class="font-mono text-xs uppercase text-emerald-400 mb-1">Verified Production Outcomes</h4>
+          <p class="text-white">${p.outcomes}</p>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-between gap-4 pt-2">
+          <div class="flex flex-wrap gap-2">
+            ${p.tech.map(t => `<span class="px-2.5 py-1 rounded bg-white/5 border border-white/10 font-mono text-xs text-cyanAccent">${t}</span>`).join('')}
+          </div>
+          ${p.github ? `<a href="${p.github}" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-lg bg-cyanAccent text-obsidian font-mono text-xs font-bold">View Repository ↗</a>` : ''}
+        </div>
+      `;
+      document.getElementById('project-modal').classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeProjectModal() {
+      document.getElementById('project-modal').classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    // ---------------------------------------------------------
+    // 4. CERTIFICATION & RESUME MODAL CONTROLLERS
+    // ---------------------------------------------------------
+    const certsData = [
+      {
+        title: "UiPath Certified Professional Automation Developer Professional",
+        issuer: "UiPath",
+        status: "Verified Digital Credential",
+        credentialId: "182751723",
+        verifyUrl: "https://credentials.uipath.com/5bde2223-674f-4905-b825-1c6cec41689b#acc.bvKu1lcQ",
+        scope: "Advanced REFramework architecture, Orchestrator queue & asset administration, state machines, exception handling, and enterprise deployment."
+      },
+      {
+        title: "UiPath Certified Professional Agentic Automation Associate",
+        issuer: "UiPath",
+        status: "Verified Digital Credential",
+        credentialId: "170855327",
+        verifyUrl: "https://credentials.uipath.com/0c36596c-4241-43fd-a941-f2f374d77295#acc.EUMFwz2Y",
+        scope: "Autonomous AI agent workflows, UiPath Agent Builder, Maestro Flow orchestration, tool calling, and human-in-the-loop escalations."
+      },
+      {
+        title: "UiPath Certified Professional Specialized AI Associate",
+        issuer: "UiPath",
+        status: "Verified Digital Credential",
+        credentialId: "131036374",
+        verifyUrl: "https://credentials.uipath.com/d5bb3f9c-0beb-4d09-a97a-0b5fb6eb7fcf#acc.GkYTmKvP",
+        scope: "Intelligent Document Processing (IDP), UiPath Document Understanding, ML extractor integration, and AI Center lifecycle."
+      }
+    ];
+
+    function openCertModal(index) {
+      const c = certsData[index];
+      document.getElementById('modal-cert-title').textContent = c.title;
+      document.getElementById('modal-cert-body').innerHTML = `
+        <div class="p-3.5 rounded-lg bg-obsidian border border-white/10 space-y-2">
+          <div><span class="text-slate-400">ISSUING AUTHORITY:</span> <span class="text-white">${c.issuer}</span></div>
+          <div><span class="text-slate-400">STATUS:</span> <span class="text-emerald-400">${c.status}</span></div>
+          <div><span class="text-slate-400">CREDENTIAL ID:</span> <span class="text-cyanAccent">${c.credentialId}</span></div>
+        </div>
+        <p class="font-sans text-slate-300 leading-relaxed">${c.scope}</p>
+        <div class="pt-3 flex items-center justify-between">
+          <a href="${c.verifyUrl}" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-lg bg-cyanAccent text-obsidian font-bold text-xs">Official Credential Link ↗</a>
+          <button onclick="closeCertModal()" class="px-4 py-2 rounded-lg bg-white/10 text-white text-xs">Close</button>
+        </div>
+      `;
+      document.getElementById('cert-modal').classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeCertModal() {
+      document.getElementById('cert-modal').classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    function openResumeModal() {
+      document.getElementById('resume-modal').classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+      lucide.createIcons();
+    }
+
+    function closeResumeModal() {
+      document.getElementById('resume-modal').classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    // Close modals when clicking backdrop outside card
+    ['project-modal', 'cert-modal', 'resume-modal'].forEach(modalId => {
+      document.getElementById(modalId).addEventListener('click', function(e) {
+        if (e.target === this) {
+          this.classList.add('hidden');
+          document.body.style.overflow = '';
+        }
+      });
+    });
+
+    // Keyboard ESC close support for all modals
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeProjectModal();
+        closeCertModal();
+        closeResumeModal();
+      }
+    });
+
+    // ---------------------------------------------------------
+    // 5. ENGINEERING LAB INTERACTIVE SIMULATOR
+    // ---------------------------------------------------------
+    const labPipelines = {
+      reframework: {
+        title: "PIPELINE 01: UIPATH_REFRAMEWORK_TRANSACTION_ENGINE (SIMULATION)",
+        nodes: [
+          {
+            id: "INIT",
+            name: "01. Init State",
+            purpose: "Read Config.xlsx, fetch Orchestrator Assets, initialize CMS/MySQL connections, and launch target applications.",
+            input: "{ ConfigPath: 'Data/Config.xlsx', OrchestratorAssets: ['CMS_URL', 'DB_ConnString'] }",
+            output: "{ SystemInitialized: true, ActiveSession: 'CMS_Auth_Token_994A' }",
+            failure: "System Exception -> Abort initialization, capture screenshot, send alert email to Ops."
+          },
+          {
+            id: "GET_TX",
+            name: "02. Get Transaction Data",
+            purpose: "Fetch next pending queue item from UiPath Orchestrator Queue (e.g., CDR Claim or SDLT Case Reference).",
+            input: "{ QueueName: 'CDR_Claims_Queue', FilterStrategy: 'SpecificPriority' }",
+            output: "{ TransactionItem: 'CLM-2026-88412', ContainerNo: 'CMAU4928172', RetryNo: 0 }",
+            failure: "No More Queue Items -> Transition cleanly to End Process state."
+          },
+          {
+            id: "PROCESS_TX",
+            name: "03. Process Transaction",
+            purpose: "Execute core business workflow: GenAI/IDP document extraction, payer rule validation, CMS update, and MySQL insert.",
+            input: "{ ContainerNo: 'CMAU4928172', ClaimPDF: 'Blob_Stream', PayerRule: 'Ocean_Tariff_V2' }",
+            output: "{ InvoiceGenerated: 'INV-99201', UTRN_Updated: true, CMS_Status: 'CLOSED' }",
+            failure: "Business Rule Exception (BRE) -> Skip retry, flag queue item as BRE, notify Legal Analyst."
+          },
+          {
+            id: "SET_STATUS",
+            name: "04. Set Transaction Status",
+            purpose: "Update Orchestrator Queue status (Success / BRE / Application Exception) and increment transaction counters.",
+            input: "{ TransactionID: 'CLM-2026-88412', ExecutionResult: 'Success' }",
+            output: "{ QueueStatus: 'Successful', AuditLogWritten: true }",
+            failure: "Application Exception -> Trigger automatic Queue Retry & re-initialize applications."
+          },
+          {
+            id: "END_PROC",
+            name: "05. End Process",
+            purpose: "Close CMS/SAP sessions gracefully, compile final BOT execution summary report, and email stakeholder metrics.",
+            input: "{ TotalProcessed: 142, Success: 139, BRE: 3, SystemErrors: 0 }",
+            output: "{ SummaryReportDispatched: 'ops-team@enterprise.com', BotState: 'Idle' }",
+            failure: "Force-kill hanging browser/SAP processes if graceful close times out."
+          }
+        ]
+      },
+      agentic: {
+        title: "PIPELINE 02: UIPATH_MAESTRO_AGENTIC_VERIFICATION_FLOW (SIMULATION)",
+        nodes: [
+          {
+            id: "INTAKE",
+            name: "01. Candidate Trigger",
+            purpose: "Ingest candidate onboarding packet via Email Connector and initialize a stateful UiPath Maestro Flow instance.",
+            input: "{ CandidateID: 'EMP-4092', DocsAttached: ['ID_Proof.pdf', 'Employment_History.pdf'] }",
+            output: "{ MaestroInstanceID: 'MST-8821', State: 'AGENT_EVALUATION' }",
+            failure: "Corrupted attachment -> Agent autonomously drafts clarification email to candidate."
+          },
+          {
+            id: "IDP_EXTRACT",
+            name: "02. IDP & GenAI Parse",
+            purpose: "Extract structured identity and prior-employment attributes using UiPath Document Understanding & LLM parsing.",
+            input: "{ DocumentStream: 'Employment_History.pdf', Schema: 'BGV_Standard_V1' }",
+            output: "{ ExtractedEmployer: 'Acme Corp', Tenure: '2022-2025', Confidence: 0.96 }",
+            failure: "Confidence < 0.80 -> Route extracted fields to Action Center validation station."
+          },
+          {
+            id: "AGENT_REASON",
+            name: "03. Agent Builder Reasoning",
+            purpose: "UiPath Agent evaluates extracted data against compliance rules and decides whether to auto-approve or escalate.",
+            input: "{ ExtractedData: {...}, PolicyRules: 'Strict_Tenure_Match' }",
+            output: "{ AgentDecision: 'FLAG_TENURE_GAP', ActionRequired: 'SLACK_HR_ESCALATION' }",
+            failure: "LLM Timeout -> Fallback to deterministic RPA rule validation."
+          },
+          {
+            id: "HITL_SLACK",
+            name: "04. Slack & Email HITL",
+            purpose: "Orchestrate human-in-the-loop approval via Slack notification and wait asynchronously via Maestro Flow.",
+            input: "{ Channel: '#hr-compliance', CandidateID: 'EMP-4092', Discrepancy: '60-day gap' }",
+            output: "{ ReviewerDecision: 'APPROVED_WITH_WAIVER', Reviewer: 'HR_Lead' }",
+            failure: "SLA Breach (24h) -> Maestro triggers automated reminder ping to backup compliance officer."
+          },
+          {
+            id: "FINAL_SYNC",
+            name: "05. RPA System Commit",
+            purpose: "Invoke deterministic UiPath RPA workflow & Python sync script to update HRMS/CMS records and close case.",
+            input: "{ CandidateID: 'EMP-4092', FinalStatus: 'VERIFIED', AuditTrail: 'MST-8821' }",
+            output: "{ HRMS_Updated: true, OnboardingCleared: true }",
+            failure: "Target HRMS Locked -> Queue transaction for automatic retry in 15 minutes."
+          }
+        ]
+      }
+    };
+
+    let currentPipeline = 'reframework';
+    let currentLabNodeIndex = 0;
+
+    function switchLabPipeline(pipeKey) {
+      currentPipeline = pipeKey;
+      currentLabNodeIndex = 0;
+      document.getElementById('lab-btn-reframework').className = pipeKey === 'reframework'
+        ? "lab-pipe-btn px-4 py-2 rounded-lg font-mono text-xs bg-cyanAccent text-obsidian font-bold"
+        : "lab-pipe-btn px-4 py-2 rounded-lg font-mono text-xs bg-white/5 text-slate-300 border border-white/10 hover:border-cyanAccent";
+      document.getElementById('lab-btn-agentic').className = pipeKey === 'agentic'
+        ? "lab-pipe-btn px-4 py-2 rounded-lg font-mono text-xs bg-aiViolet text-white font-bold"
+        : "lab-pipe-btn px-4 py-2 rounded-lg font-mono text-xs bg-white/5 text-slate-300 border border-white/10 hover:border-cyanAccent";
+      renderLab();
+    }
+
+    function selectLabNode(index) {
+      currentLabNodeIndex = index;
+      renderLab();
+    }
+
+    function renderLab() {
+      const pipe = labPipelines[currentPipeline];
+      document.getElementById('lab-pipeline-title').textContent = pipe.title;
+      const nodesContainer = document.getElementById('lab-nodes-container');
+      nodesContainer.innerHTML = pipe.nodes.map((node, idx) => {
+        const active = idx === currentLabNodeIndex;
+        return `
+          <button onclick="selectLabNode(${idx})" class="p-4 rounded-xl text-left font-mono transition-all border ${active ? 'bg-cyanAccent/15 border-cyanAccent node-pulse' : 'bg-obsidian/60 border-white/10 hover:border-white/30'}">
+            <div class="flex items-center justify-between text-[10px] ${active ? 'text-cyanAccent' : 'text-slate-400'}">
+              <span>NODE_0${idx + 1}</span>
+              <span>${active ? '● ACTIVE' : '○ IDLE'}</span>
+            </div>
+            <div class="font-display font-bold text-sm text-white mt-1.5">${node.name}</div>
+          </button>
+        `;
+      }).join('');
+
+      const activeNode = pipe.nodes[currentLabNodeIndex];
+      document.getElementById('lab-inspector').innerHTML = `
+        <div class="lg:col-span-5 space-y-3">
+          <span class="text-xs text-cyanAccent uppercase tracking-wider">Selected Stage Telemetry</span>
+          <h4 class="font-display text-xl font-bold text-white">${activeNode.name}</h4>
+          <p class="font-sans text-sm text-slate-300 leading-relaxed">${activeNode.purpose}</p>
+          <div class="p-3 rounded-lg bg-amber-500/10 border border-amber-500/30 text-xs text-amber-300">
+            <strong class="block uppercase text-[10px] text-amber-400 mb-1">Exception &amp; Failure Recovery Protocol:</strong>
+            ${activeNode.failure}
+          </div>
+        </div>
+        <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
+          <div class="p-4 rounded-lg bg-graphite border border-white/10">
+            <span class="text-slate-400 block mb-2">// SIMULATED INPUT PAYLOAD</span>
+            <pre class="text-cyanAccent whitespace-pre-wrap break-words">${activeNode.input}</pre>
+          </div>
+          <div class="p-4 rounded-lg bg-graphite border border-white/10">
+            <span class="text-slate-400 block mb-2">// SIMULATED OUTPUT PAYLOAD</span>
+            <pre class="text-emerald-400 whitespace-pre-wrap break-words">${activeNode.output}</pre>
+          </div>
+        </div>
+      `;
+    }
+    renderLab();
+
+    // ---------------------------------------------------------
+    // 6. VALIDATED CONTACT FORM CONTROLLER
+    // ---------------------------------------------------------
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const hp = document.getElementById('website-hp').value;
+      if (hp) return;
+
+      const name = document.getElementById('sender-name').value.trim();
+      const email = document.getElementById('sender-email').value.trim();
+      const message = document.getElementById('sender-message').value.trim();
+      const feedback = document.getElementById('form-feedback');
+
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!name || !emailRegex.test(email) || message.length < 10) {
+        feedback.className = "p-3 rounded-lg font-mono text-xs bg-rose-500/15 border border-rose-500/40 text-rose-300 block";
+        feedback.textContent = "Validation Error: Please enter your name, a valid email address, and a message of at least 10 characters.";
+        return;
+      }
+
+      feedback.className = "p-3 rounded-lg font-mono text-xs bg-emerald-500/15 border border-emerald-500/40 text-emerald-300 block";
+      feedback.textContent = "Payload validated! Opening your mail client addressed to prathameshhulavale34@gmail.com...";
+
+      const subject = encodeURIComponent(`[Portfolio Inquiry] Automation / FDE Opportunity from ${name}`);
+      const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
+      window.location.href = `mailto:prathameshhulavale34@gmail.com?subject=${subject}&body=${body}`;
+    });
+
+    // ---------------------------------------------------------
+    // 7. HERO 3D INTERACTIVE ORBITAL AI & AGENTIC REACTOR CORE
+    // ---------------------------------------------------------
+    let heroPulseBoost = 0;
+
+    function triggerHeroPulse() {
+      heroPulseBoost = 1.0;
+      const logEl = document.getElementById('hero-bot-live-log');
+      const messages = [
+        "⚡ PULSE DISPATCHED: Maestro Flow -> Agent Builder -> Python API Sync!",
+        "⚡ PULSE DISPATCHED: REFramework Queue -> IDP Extraction -> MySQL Commit!",
+        "⚡ PULSE DISPATCHED: Human-in-the-Loop Slack Approval -> Agent Resumed!"
+      ];
+      if (logEl) {
+        logEl.textContent = messages[Math.floor(Math.random() * messages.length)];
+      }
+    }
+
+    (function initHero3DOrbitalCore() {
+      const container = document.getElementById('hero-3d-container');
+      if (!container || typeof THREE === 'undefined') return;
+
+      const scene = new THREE.Scene();
+      const camera = new THREE.PerspectiveCamera(50, container.clientWidth / container.clientHeight, 0.1, 1000);
+      camera.position.z = 6.6;
+
+      const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+      renderer.setSize(container.clientWidth, container.clientHeight);
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+      container.appendChild(renderer.domElement);
+
+      // Master Orbital Group
+      const orbitalGroup = new THREE.Group();
+      scene.add(orbitalGroup);
+
+      // 1. Outer Wireframe Geodesic Sphere
+      const outerGeo = new THREE.IcosahedronGeometry(1.75, 1);
+      const outerMat = new THREE.MeshBasicMaterial({
+        color: 0x00F0FF,
+        wireframe: true,
+        transparent: true,
+        opacity: 0.28
+      });
+      const outerSphere = new THREE.Mesh(outerGeo, outerMat);
+      orbitalGroup.add(outerSphere);
+
+      // 2. Inner AI Reasoning Kernel
+      const kernelGeo = new THREE.OctahedronGeometry(0.85, 1);
+      const kernelMat = new THREE.MeshBasicMaterial({
+        color: 0x8B5CF6,
+        wireframe: true,
+        transparent: true,
+        opacity: 0.72
+      });
+      const kernelMesh = new THREE.Mesh(kernelGeo, kernelMat);
+      orbitalGroup.add(kernelMesh);
+
+      // 3. Solid Glowing Energy Core Heart
+      const heartGeo = new THREE.SphereGeometry(0.36, 24, 24);
+      const heartMat = new THREE.MeshBasicMaterial({
+        color: 0x00F0FF,
+        transparent: true,
+        opacity: 0.9
+      });
+      const heartMesh = new THREE.Mesh(heartGeo, heartMat);
+      orbitalGroup.add(heartMesh);
+
+      // 4. Three Counter-Rotating Gyroscopic Orbital Rings
+      const ring1Geo = new THREE.TorusGeometry(2.15, 0.018, 16, 100);
+      const ring1Mat = new THREE.MeshBasicMaterial({ color: 0x00F0FF, transparent: true, opacity: 0.65 });
+      const gyroRing1 = new THREE.Mesh(ring1Geo, ring1Mat);
+      gyroRing1.rotation.x = Math.PI / 2.3;
+      orbitalGroup.add(gyroRing1);
+
+      const ring2Geo = new THREE.TorusGeometry(2.42, 0.015, 16, 100);
+      const ring2Mat = new THREE.MeshBasicMaterial({ color: 0x8B5CF6, transparent: true, opacity: 0.5 });
+      const gyroRing2 = new THREE.Mesh(ring2Geo, ring2Mat);
+      gyroRing2.rotation.y = Math.PI / 3;
+      gyroRing2.rotation.x = Math.PI / 5;
+      orbitalGroup.add(gyroRing2);
+
+      const ring3Geo = new THREE.TorusGeometry(2.68, 0.012, 16, 100);
+      const ring3Mat = new THREE.MeshBasicMaterial({ color: 0x10B981, transparent: true, opacity: 0.4 });
+      const gyroRing3 = new THREE.Mesh(ring3Geo, ring3Mat);
+      gyroRing3.rotation.x = -Math.PI / 3.2;
+      orbitalGroup.add(gyroRing3);
+
+      // 5. Connected Satellite Nodes
+      const satellitePositions = [
+        [2.1, 0.8, 0.5], [-2.0, -0.9, 0.6], [0.9, 2.0, -0.7],
+        [-1.2, 1.7, 1.0], [1.6, -1.6, -0.8], [-0.5, -2.1, 0.9]
+      ];
+      const satGeo = new THREE.SphereGeometry(0.11, 16, 16);
+      const lineMat = new THREE.LineBasicMaterial({ color: 0x38BDF8, transparent: true, opacity: 0.38 });
+
+      satellitePositions.forEach((pos, idx) => {
+        const colors = [0x00F0FF, 0x8B5CF6, 0x10B981];
+        const satMat = new THREE.MeshBasicMaterial({ color: colors[idx % colors.length] });
+        const satMesh = new THREE.Mesh(satGeo, satMat);
+        satMesh.position.set(pos[0], pos[1], pos[2]);
+        orbitalGroup.add(satMesh);
+
+        const points = [new THREE.Vector3(0, 0, 0), new THREE.Vector3(pos[0], pos[1], pos[2])];
+        const lineGeo = new THREE.BufferGeometry().setFromPoints(points);
+        const line = new THREE.Line(lineGeo, lineMat);
+        orbitalGroup.add(line);
+      });
+
+      // 6. Ambient Floating Data Particles Field
+      const particleCount = 90;
+      const particleGeo = new THREE.BufferGeometry();
+      const positions = new Float32Array(particleCount * 3);
+      for (let i = 0; i < particleCount * 3; i++) {
+        positions[i] = (Math.random() - 0.5) * 7.5;
+      }
+      particleGeo.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+      const particleMat = new THREE.PointsMaterial({
+        color: 0x38BDF8,
+        size: 0.045,
+        transparent: true,
+        opacity: 0.65
+      });
+      const particleSystem = new THREE.Points(particleGeo, particleMat);
+      scene.add(particleSystem);
+
+      let targetRotX = 0.2;
+      let targetRotY = 0.4;
+      const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      container.addEventListener('mousemove', (e) => {
+        if (prefersReducedMotion) return;
+        const rect = container.getBoundingClientRect();
+        const x = ((e.clientX - rect.left) / rect.width) * 2 - 1;
+        const y = -((e.clientY - rect.top) / rect.height) * 2 + 1;
+        targetRotY = x * 0.95;
+        targetRotX = y * 0.65;
+      });
+
+      container.addEventListener('click', () => {
+        triggerHeroPulse();
+      });
+
+      let clock = 0;
+      function animateOrbitalCore() {
+        requestAnimationFrame(animateOrbitalCore);
+        clock += 0.015;
+
+        if (!prefersReducedMotion) {
+          const speedBoost = 1 + heroPulseBoost * 3.5;
+
+          outerSphere.rotation.y += 0.0035 * speedBoost;
+          outerSphere.rotation.x += 0.0018 * speedBoost;
+          kernelMesh.rotation.y -= 0.007 * speedBoost;
+          kernelMesh.rotation.z += 0.004 * speedBoost;
+
+          gyroRing1.rotation.z += 0.008 * speedBoost;
+          gyroRing2.rotation.x -= 0.006 * speedBoost;
+          gyroRing2.rotation.y += 0.005 * speedBoost;
+          gyroRing3.rotation.z -= 0.005 * speedBoost;
+
+          particleSystem.rotation.y += 0.0012 * speedBoost;
+
+          const pulseScale = 1 + Math.sin(clock * 3) * 0.12 + heroPulseBoost * 0.65;
+          heartMesh.scale.set(pulseScale, pulseScale, pulseScale);
+          heartMat.color.setHex(heroPulseBoost > 0.2 ? 0x10B981 : 0x00F0FF);
+
+          if (heroPulseBoost > 0.01) {
+            heroPulseBoost *= 0.94;
+          } else {
+            heroPulseBoost = 0;
+          }
+
+          orbitalGroup.rotation.y += (targetRotY - orbitalGroup.rotation.y) * 0.06;
+          orbitalGroup.rotation.x += (targetRotX - orbitalGroup.rotation.x) * 0.06;
+        }
+
+        renderer.render(scene, camera);
+      }
+      animateOrbitalCore();
+
+      window.addEventListener('resize', () => {
+        camera.aspect = container.clientWidth / container.clientHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(container.clientWidth, container.clientHeight);
+      });
+    })();
+
+    // ---------------------------------------------------------
+    // 8. ENGINEERING LAB LIVE 3D INDUSTRIAL RPA ARM WORKSTATION
+    // ---------------------------------------------------------
+    let labBotSpeedMultiplier = 1;
+    let labBotPaused = false;
+    let labBotExceptionMode = false;
+    let labTxCounter = 142;
+
+    function appendLabConsole(msg, colorClass = "text-slate-300") {
+      const consoleEl = document.getElementById('lab-bot-console');
+      if (!consoleEl) return;
+      const line = document.createElement('div');
+      line.className = colorClass;
+      const time = new Date().toLocaleTimeString([], { hour12: false });
+      line.textContent = `[${time}] ${msg}`;
+      consoleEl.prepend(line);
+      if (consoleEl.children.length > 18) consoleEl.removeChild(consoleEl.lastChild);
+    }
+
+    function toggleLabBotSpeed() {
+      labBotSpeedMultiplier = labBotSpeedMultiplier === 1 ? 2.5 : 1;
+      const btn = document.getElementById('btn-bot-speed');
+      btn.textContent = labBotSpeedMultiplier === 1 ? "Speed: 1x Normal" : "Speed: 2.5x Turbo";
+      appendLabConsole(`Robot clock speed set to ${labBotSpeedMultiplier}x`, "text-cyanAccent");
+    }
+
+    function toggleLabBotPause() {
+      labBotPaused = !labBotPaused;
+      const btn = document.getElementById('btn-bot-pause');
+      btn.textContent = labBotPaused ? "Resume Robot" : "Pause Robot";
+      appendLabConsole(labBotPaused ? "Robot execution paused by operator" : "Robot execution resumed", "text-amber-300");
+    }
+
+    function triggerLabBotException() {
+      labBotExceptionMode = true;
+      const dot = document.getElementById('lab-bot-status-dot');
+      const text = document.getElementById('lab-bot-action-text');
+      if (dot) dot.className = "w-2.5 h-2.5 rounded-full bg-amber-400 animate-ping";
+      if (text) text.textContent = "BRE_DETECTED: Invalid Container ID -> Routing to Exception Queue!";
+      appendLabConsole("BRE Triggered: Missing Payer Mapping -> Flagged & Notified Legal Ops", "text-amber-400");
+      setTimeout(() => {
+        labBotExceptionMode = false;
+        if (dot) dot.className = "w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping";
+        appendLabConsole("REFramework recovered -> Fetching next Queue Item", "text-emerald-400");
+      }, 3200);
+    }
+
+    (function initLab3DWorkstation() {
+      const container = document.getElementById('lab-3d-bot-container');
+      if (!container || typeof THREE === 'undefined') return;
+
+      const scene = new THREE.Scene();
+      const camera = new THREE.PerspectiveCamera(45, container.clientWidth / container.clientHeight, 0.1, 1000);
+      camera.position.set(0, 3.4, 7.2);
+      camera.lookAt(0, 0.3, 0);
+
+      const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+      renderer.setSize(container.clientWidth, container.clientHeight);
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+      container.appendChild(renderer.domElement);
+
+      // Lighting
+      scene.add(new THREE.AmbientLight(0xffffff, 0.7));
+      const dirLight = new THREE.DirectionalLight(0x00F0FF, 1.8);
+      dirLight.position.set(4, 6, 5);
+      scene.add(dirLight);
+
+      const floorGrid = new THREE.GridHelper(10, 20, 0x00F0FF, 0x1E293B);
+      floorGrid.position.y = -1.2;
+      floorGrid.material.opacity = 0.25;
+      floorGrid.material.transparent = true;
+      scene.add(floorGrid);
+
+      // Materials
+      const metalMat = new THREE.MeshStandardMaterial({ color: 0x1E293B, metalness: 0.85, roughness: 0.2 });
+      const jointMat = new THREE.MeshStandardMaterial({ color: 0x00F0FF, emissive: 0x00F0FF, emissiveIntensity: 0.3 });
+      const scannerMat = new THREE.MeshStandardMaterial({ color: 0x8B5CF6, emissive: 0x8B5CF6, emissiveIntensity: 0.35 });
+      const vaultMat = new THREE.MeshStandardMaterial({ color: 0x10B981, emissive: 0x10B981, emissiveIntensity: 0.3 });
+
+      // Station A (Left): Queue Intake
+      const stationA = new THREE.Mesh(new THREE.CylinderGeometry(0.75, 0.85, 0.25, 24), metalMat);
+      stationA.position.set(-2.4, -1.05, 0.8);
+      scene.add(stationA);
+      const ringA = new THREE.Mesh(new THREE.TorusGeometry(0.78, 0.03, 12, 32), jointMat);
+      ringA.rotation.x = Math.PI / 2;
+      ringA.position.set(-2.4, -0.92, 0.8);
+      scene.add(ringA);
+
+      // Station B (Back Center): IDP & GenAI Scanner Arch
+      const stationB = new THREE.Mesh(new THREE.CylinderGeometry(0.75, 0.85, 0.25, 24), metalMat);
+      stationB.position.set(0, -1.05, -1.5);
+      scene.add(stationB);
+      const scannerArch = new THREE.Mesh(new THREE.TorusGeometry(0.85, 0.04, 12, 32, Math.PI), scannerMat);
+      scannerArch.position.set(0, -0.9, -1.5);
+      scene.add(scannerArch);
+
+      // Station C (Right): CMS & MySQL Database Vault
+      const stationC = new THREE.Mesh(new THREE.CylinderGeometry(0.75, 0.85, 0.25, 24), metalMat);
+      stationC.position.set(2.4, -1.05, 0.8);
+      scene.add(stationC);
+      const ringC = new THREE.Mesh(new THREE.TorusGeometry(0.78, 0.03, 12, 32), vaultMat);
+      ringC.rotation.x = Math.PI / 2;
+      ringC.position.set(2.4, -0.92, 0.8);
+      scene.add(ringC);
+
+      // Central Articulated 3D Robotic Arm
+      const armBasePivot = new THREE.Group();
+      armBasePivot.position.set(0, -1.0, 0.4);
+      scene.add(armBasePivot);
+
+      const pedestal = new THREE.Mesh(new THREE.CylinderGeometry(0.55, 0.7, 0.5, 24), metalMat);
+      armBasePivot.add(pedestal);
+
+      const shoulderJoint = new THREE.Mesh(new THREE.SphereGeometry(0.32, 16, 16), jointMat);
+      shoulderJoint.position.y = 0.35;
+      armBasePivot.add(shoulderJoint);
+
+      const lowerArmGroup = new THREE.Group();
+      lowerArmGroup.position.y = 0.35;
+      armBasePivot.add(lowerArmGroup);
+
+      const lowerArmBeam = new THREE.Mesh(new THREE.BoxGeometry(0.24, 1.45, 0.24), metalMat);
+      lowerArmBeam.position.y = 0.7;
+      lowerArmGroup.add(lowerArmBeam);
+
+      const elbowGroup = new THREE.Group();
+      elbowGroup.position.y = 1.4;
+      lowerArmGroup.add(elbowGroup);
+
+      const elbowSphere = new THREE.Mesh(new THREE.SphereGeometry(0.24, 16, 16), jointMat);
+      elbowGroup.add(elbowSphere);
+
+      const forearmBeam = new THREE.Mesh(new THREE.BoxGeometry(0.18, 1.35, 0.18), metalMat);
+      forearmBeam.position.y = 0.65;
+      elbowGroup.add(forearmBeam);
+
+      const gripperGroup = new THREE.Group();
+      gripperGroup.position.y = 1.35;
+      elbowGroup.add(gripperGroup);
+
+      const payloadMat = new THREE.MeshStandardMaterial({
+        color: 0x00F0FF,
+        emissive: 0x00F0FF,
+        emissiveIntensity: 0.6
+      });
+      const payloadCube = new THREE.Mesh(new THREE.BoxGeometry(0.38, 0.38, 0.38), payloadMat);
+      payloadCube.position.y = 0.22;
+      gripperGroup.add(payloadCube);
+
+      let cycleTime = 0;
+      let lastStage = -1;
+
+      function animateLabArm() {
+        requestAnimationFrame(animateLabArm);
+
+        if (!labBotPaused) {
+          cycleTime += 0.012 * labBotSpeedMultiplier;
+          const phase = cycleTime % (Math.PI * 2);
+          const normalized = phase / (Math.PI * 2);
+
+          const targetYaw = Math.cos(phase) * 1.15;
+          armBasePivot.rotation.y = targetYaw;
+
+          const dip = Math.abs(Math.sin(phase * 3)) * 0.45;
+          lowerArmGroup.rotation.z = 0.25 + dip * 0.4;
+          elbowGroup.rotation.z = -1.1 - dip * 0.5;
+
+          payloadCube.rotation.y += 0.05;
+
+          const actionText = document.getElementById('lab-bot-action-text');
+          const counterText = document.getElementById('lab-bot-counter');
+
+          if (labBotExceptionMode) {
+            payloadMat.color.setHex(0xF59E0B);
+            payloadMat.emissive.setHex(0xF59E0B);
+          } else if (normalized < 0.33) {
+            payloadMat.color.setHex(0x00F0FF);
+            payloadMat.emissive.setHex(0x00F0FF);
+            if (lastStage !== 0) {
+              lastStage = 0;
+              if (actionText) actionText.textContent = "STAGE 01: Picking Queue Item from Orchestrator...";
+            }
+          } else if (normalized < 0.66) {
+            payloadMat.color.setHex(0x8B5CF6);
+            payloadMat.emissive.setHex(0x8B5CF6);
+            if (lastStage !== 1) {
+              lastStage = 1;
+              if (actionText) actionText.textContent = "STAGE 02: Running IDP + GenAI Document Extraction...";
+            }
+          } else {
+            payloadMat.color.setHex(0x10B981);
+            payloadMat.emissive.setHex(0x10B981);
+            if (lastStage !== 2) {
+              lastStage = 2;
+              labTxCounter++;
+              if (actionText) actionText.textContent = "STAGE 03: Validated! Committing to CMS & MySQL Vault...";
+              if (counterText) counterText.textContent = `TX_PROCESSED: ${labTxCounter}`;
+              appendLabConsole(`TX #${labTxCounter} committed to CMS & MySQL successfully`, "text-emerald-400");
+            }
+          }
+        }
+
+        renderer.render(scene, camera);
+      }
+      animateLabArm();
+
+      window.addEventListener('resize', () => {
+        camera.aspect = container.clientWidth / container.clientHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(container.clientWidth, container.clientHeight);
+      });
+    })();
+  </script>
+</body>
+</html>
